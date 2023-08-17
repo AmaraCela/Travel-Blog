@@ -1,0 +1,126 @@
+.join-us-popup-container{
+    background-color: rgba(216, 216, 216, 1);
+    padding: 50px;
+    text-align: center;
+    border-radius: 30px;
+    border: 3px solid #296C81;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.join-popup-title h1{
+    font-family: "Lobster Two", cursive;
+    font-size: 60px;
+    margin-bottom: 30px; 
+}
+
+.join-popup-title h3{
+    font-family: "ABeeZee", sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px; 
+}
+
+
+.join-us-form{
+    margin-top: 10px;
+}
+
+.join-us-form input:not([type="file"]){
+    padding: 20px 15px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+
+    &&::placeholder{
+        font-size: 20px;
+        color: rgba(141, 141, 141, 1);
+    }
+}
+
+.join-us-form input:focus{
+    outline: none;
+    border: 2px solid #1A5164;
+    box-shadow: 0 0 4px #296C81;
+}
+
+.join-us-form input[type="file"]{
+    font-size: 15px;
+    border-radius: 19px;
+    margin-bottom: 40px;
+    display: inline-flex;
+
+    &&::-webkit-file-upload-button{
+        background-color: #296C81;
+        color: #E8E8E8;
+        padding: 10px 21px;
+        cursor: pointer;
+        font-size: 20px;
+        height: 70px;
+        &&:hover{
+            background-color: rgba(26, 81, 100, 1);
+            transition: 0.5s;
+        }
+    }
+
+    
+}
+
+#join-submit-button{
+    color: #E8E8E8;
+    width: 100%;
+    height: 70px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#join-submit-button:hover{
+    
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+
+#join-submit-button:focus{
+    background-color: rgb(86, 207, 247);
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+#join-us-popup{
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    
+}
+
+.inactive-popup{
+    display: none;
+}
+
+.active-join-us-btn{
+    background-color: #296C81;
+
+    &&:hover{
+        background-color: rgba(26, 81, 100, 1);
+    }
+}
+
+.inactive-join-us-btn{
+    background-color: #ccc;
+    cursor: not-allowed;
+
+    &&:hover{
+        background-color: #ccc;
+    }
+}
+
+
+/* #join-us-popup {
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+} */

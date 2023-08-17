@@ -23,20 +23,24 @@
 	display: inline-block;
 }
 
-.carousel .carousel-item .btn {    
+.carousel .carousel-item .more-btn {    
 	border-radius: 0;
 	font-size: 12px;
 	text-transform: uppercase;
 	font-weight: bold;
 	border: none;
-	background: #a177ff;
+	background: #828184aa;
 	padding: 6px 15px;
 	margin-top: 5px;
+    color: #fff;
+    
 }
-.carousel .carousel-item .btn:hover {
+
+.carousel .carousel-item .more-btn:hover {
 	background: #8c5bff;
 }
-.carousel .carousel-item .btn i {
+
+.carousel .carousel-item .more-btn i {
 	font-size: 14px;
 	font-weight: bold;
 	margin-left: 5px;
@@ -134,8 +138,7 @@
     .carousel .thumb-content {
         padding: 5px;
     }
-    
-    
+
 }
 
 @media screen and (max-width: 400px) {
@@ -154,9 +157,23 @@
         margin-bottom: 0px;
     }
 
-    .carousel .carousel-item .btn {
+    .carousel .carousel-item .more-btn {
         margin-top: 5px;
         font-size: 10px;
         padding: 5px;
+    }
+
+    .carousel-control-next ,
+    .carousel-control-prev {
+        display:  none;
+    }
+
+    .carousel {
+        padding: 0;
+    }
+
+    .carousel .thumb-wrapper {
+        width: 100%;
+        text-align: center;
     }
 }

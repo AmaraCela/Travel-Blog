@@ -1,18 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TravAl Tours</title>
-    <link rel="stylesheet" href="../css/tours.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Lobster&display=swap" rel="stylesheet">
-</head>
-<body>
-    <img id="main-img" src="../Images/summer-tours.jpg" alt="main image">
-    <p id="main-p">Spend an unforgettable summer with TravAl!</p>
-    <p id="browse-p">Browse the collection of summer tours that we offer</p>
-    <div class="div-cards">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TravAl Tours</title>
+        <link rel="stylesheet" href="../css/tours.css">
+        <link rel="stylesheet" href="../css/Styling.css">
+        <link rel="stylesheet" href="../css/wintermode.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Lobster+Two&family=Montserrat:wght@400;600&family=Roboto:wght@100;400&family=Ubuntu&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Montserrat:wght@400;600&family=Roboto:wght@100;400&family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Lobster&display=swap" rel="stylesheet">
+    </head>
+    <body class="summer-mode tours-bg">
+        <img id="main-img" class="summer-mode main-img" src="../Images/summer-tours.jpg" alt="main image">
+        <div class="container1">
+            <header class="header">
+            <nav class="navbar1">
+              <div class="brand-titlee"> <a href="#"><img src="../Images/location.png" id="location" alt="location"></a></div>
+              <div class="elements">
+                <ul>
+            <li><a href="#" class="l" id="l1">Tours</a></li>
+            <li><a href="./aboutUs1.html" class="l" id="l2">About Us</a></li>
+            <li><a href="./contact.html" class="l" id="l3">Contacts</a></li>
+          </ul>
+          </div>
+          </nav>
+          <nav class="navbar2">
+            <div class="btnn summer-mode" >
+              <div class="btnn__indicator summer-mode">
+                <div class="btnn__icon-container">
+                  <i class="btnn__icon fa-solid summer-mode"></i>
+                </div>
+              </div>
+            </div>
+            <button class="booking">Book a Tour</button>
+          
+            <div class="lang-menuu">
+              <div class="selected-langg">
+              </div>
+              <ul>
+                <li><a id="en" class="lang-btn active" href="" language="english" >English</a></li>
+                <li><a id="de" class="lang-btn" href="" language="german">German</a></li>
+                <li><a id="it" class="lang-btn" href="" language="italian">Italian</a></li>
+                <li><a id="fr" class="lang-btn" href="" language="french">French</a></li>
+                <li><a id="es" class="lang-btn" href="" language="espanol">Espanol</a></li>
+              </ul>
+            </div>
+            <a href="" class="toggle-buttonn">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+          </nav>
+          </header>
+          </div>
+          <div class="title">
+            <p class="al" id="main-p">Spend an unforgettable summer with TravAl!</p>
+       
 
+          </div> 
+          <p id="browse-p">Browse the collection of tours that we offer</p>
+        </div>
+          </div>
+    
+      <!-- </div> -->
+      <!-- ---------------------------------HEADER FINISHED---------------------------- -->
+
+    
+    <div id="side-filter">
+    <img id="filter-img" src="../Images/filter.png" alt="">
+    <div id="filter-div">
+        <div class="initial-div">
+        <p class="filter-p">Filter by :</p>
+        <form action="" id="categories-form">
+            <input class="radio-bt" type="radio" name="criteria" id="price"><label class="filter-p" for="price">Price</label><br>    
+            <input class="radio-bt" type="radio" name="criteria" id="numberOfDays"><label class="filter-p" for="numberOfDays">Number of days</label>
+        </form>
+        <img id="closing-x" src="../Images/X.png" alt="">
+        <div class="filter-selections">
+            <div>
+        <p id="maxPrice">Max price: -- </p>
+        <p id="p-numDays">Num of days: -- </p>
+        </div>
+        <input type="submit" id="filter-btn" class="" value="Filter" disabled>
+        <input type="submit" id="remove-filter" class="" value="Remove filter" disabled>
+        </div>
+        </div> 
+        <div class="price-form">
+            <p class="filter-p">Slide or input the maximum price:</p>
+            <div class="range">
+            <input type="range" step="1" name="maxPrice" id="maxPrice" min="50" max="500" value="250">
+            <input type="number" min="50" max="500" class="value" value="250">
+            </div>
+        </div>
+
+        <div class="days-form">
+            <label for="numDays">
+                Select the number of days: 
+            </label>
+          <select name="numDays" id="numDays">
+            <option value="1">1 day</option>
+            <option value="2">2 days</option>
+            <option value="3">3 days</option>
+            <option value="4">4 days</option>
+            <option value="5">5 days</option>
+            <option value="6">6 days</option>
+            <option value="7">7 days</option>
+          </select>
+        </div>
+    </div>
+   
+    </div>
+ 
+    <div class="div-cards">
         <div class="card">
             <div class="inner">
             <div class="front-card">
@@ -21,13 +124,17 @@
                     Dhermi Paradise
                 </p>
             </div>
-            <div class="back-card">
-                <p class="tag">5 day tours</p>
-                <p>Dhermi Tour <br>
+            <div class="back-card" title="Tap for more">
+                <p class="tag" id="5">5 day tours</p>
+                <p class="back-p"><b>Dhermi Tour </b></p><br>
+                    <hr>
                     13-18 August <br>
-                    20-25 August
-
-                </p>
+                    20-25 August 
+                <div class="price-div">
+                <img src="../Images/priceTag.png" alt="price tag" id="price-tag">
+                <p class="price" id="100">100$</p>
+                </div>
+                <p class="tap-more">Tap for more</p>
             </div>
             </div>
         </div>
@@ -41,7 +148,17 @@
                 </p>
             </div>
             <div class="back-card">
-                <p>Ksamil Tour</p>
+                <p class="tag" id="5">5 day tours</p>
+                <p class="back-p"><b>Ksamil Tour </b></p><br>
+                    <hr>
+                    13-18 August <br>
+                    20-25 August
+                
+                <div class="price-div">
+                    <img src="../Images/priceTag.png" alt="price tag" id="price-tag">
+                    <p class="price" id="100">100$</p>
+                    </div>
+                    <p class="tap-more">Tap for more</p>
             </div>
             </div>
         </div>
@@ -55,7 +172,17 @@
                 </p>
             </div>
             <div class="back-card">
-                <p>Borsh Tour</p>
+                <p class="tag" id="3">3 day tours</p>
+                <p class="back-p"><b>Borsh Tour</b></p> <br>
+                    <hr>
+                    13-16 August <br>
+                    17-20 August
+                
+                <div class="price-div">
+                    <img src="../Images/priceTag.png" alt="price tag" id="price-tag">
+                    <p class="price" id="70">70$</p>
+                    </div>
+                    <p class="tap-more">Tap for more</p>
             </div>
             </div>
         </div>
@@ -69,7 +196,17 @@
                 </p>
             </div>
             <div class="back-card">
-                <p>Gjipe Tour</p>
+                <p class="tag" id="2">2 day tours</p>
+                <p class="back-p"><b>Gjipe Tour</b></p><br>
+                    <hr>
+                    13-15 August <br>
+                    16-18 August <br>
+                
+                <div class="price-div">
+                    <img src="../Images/priceTag.png" alt="price tag" id="price-tag">
+                    <p class="price" id="50">50$</p>
+                    </div>
+                    <p class="tap-more">Tap for more</p>
             </div>
             </div>
         </div>
@@ -83,7 +220,16 @@
                 </p>
             </div>
             <div class="back-card">
-                <p>Rana e hedhur Tour</p>
+                <p class="tag" id="1">1 day tours</p>
+                <p class="back-p"><b>Rana e Hedhur Tour </b></p><br>
+                    <hr>
+                    13, 14, 15, 16, 17, 18, 19, 20 August
+                
+                <div class="price-div">
+                    <img src="../Images/priceTag.png" alt="price tag" id="price-tag">
+                    <p class="price" id="20">20$</p>
+                    </div>
+                    <p class="tap-more">Tap for more</p>
             </div>
             </div>
         </div>
@@ -97,7 +243,17 @@
                 </p>
             </div>
             <div class="back-card">
-                <p>Jale Tour</p>
+                <p class="tag" id="5">5 day tours</p>
+                <p class="back-p"><b>Jale Tour </b></p><br>
+                    <hr>
+                    13-18 August <br>
+                    20-25 August
+                
+                <div class="price-div">
+                    <img src="../Images/priceTag.png" alt="price tag" id="price-tag">
+                    <p class="price" id="150">150$</p>
+                    </div>
+                    <p class="tap-more">Tap for more</p>
             </div>
             </div>
         </div>
@@ -110,8 +266,18 @@
                     Visit Livadhi Beach
                 </p>
             </div>
-            <div class="back-card">
-                <p>Livadh Tour</p>
+            <div class="back-card" >
+                <p class="tag" id="4">4 day tours</p>
+                <p class="back-p"><b>Livadhi Tour </b></p><br>
+                    <hr>
+                    13-17 August <br>
+                    20-24 August
+                
+                <div class="price-div">
+                    <img src="../Images/priceTag.png" alt="price tag" id="price-tag">
+                    <p class="price" id="80">80$</p>
+                    </div>
+                    <p class="tap-more">Tap for more</p>
             </div>
             </div>
         </div>
@@ -125,7 +291,16 @@
                 </p>
             </div>
             <div class="back-card">
-                <p>Zvernec Tour</p>
+                <p class="tag" id="1">1 day tours</p>
+                <p class="back-p"><b>Zvernec Tour</b> </p> <br>
+                    <hr>
+                    13, 14, 15, 16, 17, 18, 19, 20 August
+               
+                <div class="price-div">
+                    <img src="../Images/priceTag.png" alt="price tag" id="price-tag">
+                    <p class="price" id="30">30$</p>
+                    </div>
+                    <p class="tap-more">Tap for more</p>
             </div>
             </div>
         </div>
@@ -139,13 +314,51 @@
                 </p>
             </div>
             <div class="back-card">
-                <p>Saranda Tour</p>
+                <p class="tag" id="5">5 day tours</p>
+                <p class="back-p"><b>Saranda Tour</b> </p><br>
+                    <hr>
+                    13-18 August <br>
+                    20-25 August
+                
+                <div class="price-div">
+                    <img src="../Images/priceTag.png" alt="price tag" id="price-tag">
+                    <p class="price" id="100">100$</p>
+                    </div>
+                    <p class="tap-more">Tap for more</p>
             </div>
             </div>
         </div>
        
     </div>
 
-    
+    <!-------------------------------------footer------------------------------>
+    <div class="container2 summer-mode" id="c2">
+        <div class="shore-part">
+          <div class="sub summer-mode" id="sub">
+            <h1>Subscribe</h1>
+            <p>be the first who knows</p>
+          </div>
+          <button class="btn">Subscribe</button>
+        </div>
+        <div class="shore2">
+          <div class="socials">
+          <ul>
+            <li><i class="footer__icons fa-brands fa-square-facebook"></i></li>
+            <li><i class="footer__icons fa-brands fa-square-instagram" style="color: #7a4b81;"></i></li>
+            <li><i class="footer__icons fa-solid fa-envelope"></i></li>
+            <li><i class="footer__icons fa-brands fa-linkedin" style="color: #1a3d7a;"></i></li>
+          </ul>
+        </div>
+        <div class="others">
+          <a href="">FAQs</a>
+          <a href="">Terms of Service</a>
+          <a href="">Privacy Policy</a>
+        </div>
+        </div>
+        <hr style="border:1px solid rgb(255, 255, 255);">
+        <p class="cop">@copyright2023</p>
+      </div>
+<script src="../Controlls/temp.js"></script>
+<script src="../Controlls/filter.js"></script>
 </body>
 </html>

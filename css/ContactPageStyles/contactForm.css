@@ -1,0 +1,106 @@
+
+
+#contact-form-section{
+    margin-top: -105px;
+}
+
+.form-container{
+    background-image: url("../../Images/ContactPageImg/camping.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: relative; */
+    /* z-index: -1; */
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+.contact-form-title{
+    font-family: "ABeeZee", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom:110px;
+    margin-top: 100px;
+    color: white;
+    
+}
+
+.form-input-field{
+    margin: 65px 0;
+    padding: px 0;
+}
+
+.form-input-field .form-control{
+    margin-top: 30px;
+    padding: 15px 15px;
+    font-size: 25px;
+    font-family: "ABeeZee", sans-serif;
+    border-radius: 10px;
+}
+
+.form-input-field .form-control:focus{
+    border: 2px solid #c3810e;
+    box-shadow: 0 0 4px orange;
+}
+
+.center-button button{
+    width: 100%;
+    /* background-color: rgba(217, 217, 217, 0.48); */
+    /* background-color: orange */
+    border: none;
+    color: white;
+    font-size: 35px;
+    font-family: "ABeeZee", sans-serif;
+    border-radius: 10px;
+    padding: 15px 0;
+    /* cursor: pointer; */
+    margin-bottom: 30px;
+}
+
+.center-button button:hover{
+    background-color: #c3810e;
+    transition: 0.5s;
+}
+
+.center-button button:focus{
+    background-color: #0e56c3;
+}
+
+.form-input-field .form-control::placeholder{
+    color: rgba(161, 158, 158, 1);
+    font-size: 25px;
+    font-family: "ABeeZee", sans-serif;
+}
+
+.disabled{
+    background-color: #ccc;
+    cursor: not-allowed;
+    &&:hover{
+        background-color: #ccc;
+    }
+}
+
+.disabled:hover{
+    background-color: #ccc;
+}
+
+.enabled{
+    background-color: rgba(218, 137, 16, 0.48);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 991px) {
+    #contact-form-section{
+        margin-top: -135px;
+    }
+
+    /* .form-input-field .form-control{
+        margin-top: 20px;
+    } */
+
+    .form-input-field{
+        margin: 25px 0;
+        padding: px 0;
+    }
+}
