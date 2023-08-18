@@ -1,19 +1,12 @@
-body{
+.ourWorkBg{
     margin: 0;
     background-image: none!important;
     background-color: rgba(67, 68, 72, 1);
 }
 
-#main-img{
+#main-img-ourWork{
     height: 600px;
     width: 100%;
-}
-.headWrap{
-    height: 580px;
-    background-image: url('../Images/bus.jpg');
-    background-size: cover;
-    background-repeat: none;
-    background-position: center;
 }
 
 .div-main{
@@ -289,6 +282,11 @@ img[alt='right-arrow']
     .carousel-img{
         width: 64%;
     }
+
+    .carousel-card-p{
+        width: 64%; 
+    }
+
 
 }
 

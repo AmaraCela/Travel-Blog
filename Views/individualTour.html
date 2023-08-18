@@ -3,7 +3,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ksamil Tour</title>
-    <link rel="stylesheet" href="../css/individualTour.css">
+    <link rel="icon" href="../Images/Logo/FavLogo.png">
+    <!-- <link rel="stylesheet" href="../css/individualTour.css"> -->
     <link rel="stylesheet" href="../css/Styling.css">
     <link rel="stylesheet" href="../css/wintermode.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,8 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Lobster&display=swap" rel="stylesheet"> 
     <!-- <link rel="stylesheet" href="../css/footer.css"> -->
     
-<body>
-  <img id="main-img" src="../Images/ksamil.jpg" alt="main image" height="600px">
+<body class="individual-body">
+  <img id="main-img-individual" src="../Images/ksamil.jpg" alt="main image" height="600px">
   <div class="container1">
     <header class="header">
     <nav class="navbar1">
@@ -61,7 +62,7 @@
   </header>
   </div>
     <div class="title">
-      <p id="main-p">Ksamil Tour</p>
+      <p id="main-p-individual">Ksamil Tour</p>
       <p id="small-descr">5 day tour - 100$</p>
     </div>
   </div>
@@ -69,45 +70,45 @@
 
     <div class="main-content">
     <main>
-        <h3>Description of the trip </h3>
+        <h3 id="descr">Description of the trip </h3>
        
-          <img src="../Images/calendar.png" alt="calendar" id="calendar-i"><h4>&nbsp;&nbsp;&nbsp;&nbsp; Next dates: </h4><br> 
+          <img src="../Images/calendar.png" alt="calendar" id="calendar-i"><h4 id="nextDates">&nbsp;&nbsp;&nbsp;&nbsp;  Next dates: </h4><br> 
           <p>
           <img src="../Images/arrow.png" id ="arrow-i" alt="arrow">&nbsp;&nbsp;&nbsp;&nbsp; 13-18 August | 100$ per person <br>
           <img src="../Images/arrow.png"  id ="arrow-i" alt="arrow">&nbsp;&nbsp;&nbsp;&nbsp; 20-25 August  | 100$ per person
         </p>
-          <img src="../Images/itinerary.png" alt="itinerary" id="itinerary-i"> <h4>&nbsp;&nbsp;&nbsp;&nbsp;Itinerary: </h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque molestiae commodi inventore laboriosam maxime! Quos, nostrum amet voluptas vero in adipisci delectus ab cupiditate nam aliquam doloribus dolor iusto sed voluptates velit numquam, error mollitia cum unde perferendis? A, repellat. Iusto vitae quisquam nisi magni aperiam? Cumque cupiditate nihil voluptate explicabo? Pariatur, aliquam accusantium consectetur corporis ducimus repudiandae veritatis earum impedit cupiditate officiis blanditiis accusamus ut similique aperiam repellat omnis inventore necessitatibus tempore quae molestias ipsum itaque illum! Architecto ut nostrum quasi obcaecati quas necessitatibus? Possimus voluptas reprehenderit ipsa perferendis, repellat, enim porro nostrum blanditiis corrupti rerum corporis sapiente.</p>
+          <img src="../Images/itinerary.png" alt="itinerary" id="itinerary-i"> <h4 id="itinerary">&nbsp;&nbsp;&nbsp;&nbsp;Itinerary: </h4>
+          <p id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque molestiae commodi inventore laboriosam maxime! Quos, nostrum amet voluptas vero in adipisci delectus ab cupiditate nam aliquam doloribus dolor iusto sed voluptates velit numquam, error mollitia cum unde perferendis? A, repellat. Iusto vitae quisquam nisi magni aperiam? Cumque cupiditate nihil voluptate explicabo? Pariatur, aliquam accusantium consectetur corporis ducimus repudiandae veritatis earum impedit cupiditate officiis blanditiis accusamus ut similique aperiam repellat omnis inventore necessitatibus tempore quae molestias ipsum itaque illum! Architecto ut nostrum quasi obcaecati quas necessitatibus? Possimus voluptas reprehenderit ipsa perferendis, repellat, enim porro nostrum blanditiis corrupti rerum corporis sapiente.</p>
     </main>
     <aside>
-        <h5>Book a tour: </h5>
+        <h5 id="bookTour">Book a tour: </h5>
         <div class="input-div">
-        <label for="date">Choose a departing date: </label>
-        <input type="date" name="date" id="date">
-        <label for="number">Number of people:  </label>
-        <input type="number" name="number" id="number" min="1" max="10">
-        <input type="submit" value="Proceed">
+        <label class="label-indiv" for="date" id="date">Choose a departing date: </label>
+        <input class="input-indiv" type="date" name="date" id="date">
+        <label class="label-indiv" for="number" id="numOfPeople">Number of people:  </label>
+        <input class="input-indiv" type="number" name="number" id="number" min="1" max="10">
+        <input class="input-indiv submit-indiv" type="submit" value="Proceed" id="value">
         </div>
-        <h5>Leave a rating:</h5>
+        <h5 id="rating">Leave a rating:</h5>
         <div class="rating">
-          <input value="star-1" name="star-radio" id="star-1" type="radio">
-          <label for="star-1">
+          <input class="input-indiv" value="star-1" name="star-radio" id="star-1" type="radio">
+          <label class="label-indiv" for="star-1">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
           </label>
-          <input value="star-1" name="star-radio" id="star-2" type="radio">
-          <label for="star-2">
+          <input class="input-indiv" value="star-1" name="star-radio" id="star-2" type="radio">
+          <label class="label-indiv" for="star-2">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
           </label>
-          <input value="star-1" name="star-radio" id="star-3" type="radio">
-          <label for="star-3">
+          <input class="input-indiv" value="star-1" name="star-radio" id="star-3" type="radio">
+          <label class="label-indiv" for="star-3">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
           </label>
-          <input value="star-1" name="star-radio" id="star-4" type="radio">
-          <label for="star-4">
+          <input class="input-indiv" value="star-1" name="star-radio" id="star-4" type="radio">
+          <label class="label-indiv" for="star-4">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
           </label>
-          <input value="star-1" name="star-radio" id="star-5" type="radio">
-          <label for="star-5">
+          <input class="input-indiv" value="star-1" name="star-radio" id="star-5" type="radio">
+          <label class="label-indiv" for="star-5">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" pathLength="360"></path></svg>
           </label>
         </div>
@@ -115,32 +116,34 @@
     </aside>
     </div>
 
-    <div class="container2" id="c2">
+    <div class="container2 summer-mode" id="c2">
       <div class="shore-part">
-        <div class="sub">
-          <h1>Subscribe</h1>
-          <p>be the first who knows</p>
+        <div class="sub summer-mode" id="sub">
+          <h1 id="subscribe">Subscribe</h1>
+          <p id="subscribeText">be the first who knows</p>
         </div>
-        <button class="btn">Subscribe</button>
+        <button class="btn" id="btnn">Subscribe</button>
       </div>
       <div class="shore2">
         <div class="socials">
         <ul>
-          <li><i class="fa-brands fa-square-facebook"></i></li>
-          <li><i class="fa-brands fa-square-instagram" style="color: #7a4b81;"></i></li>
-          <li><i class="fa-solid fa-envelope"></i></li>
-          <li><i class="fa-brands fa-linkedin" style="color: #1a3d7a;"></i></li>
+          <li><i class="footer__icons fa-brands fa-square-facebook"></i></li>
+          <li><i class="footer__icons fa-brands fa-square-instagram" style="color: #7a4b81;"></i></li>
+          <li><i class="footer__icons fa-solid fa-envelope"></i></li>
+          <li><i class="footer__icons fa-brands fa-linkedin" style="color: #1a3d7a;"></i></li>
         </ul>
       </div>
       <div class="others">
-        <a href="">FAQs</a>
-        <a href="">Terms of Service</a>
-        <a href="">Privacy Policy</a>
+        <a href="" id="f1">FAQs</a>
+        <a href="" id="f2">Terms of Service</a>
+        <a href="" id="f3">Privacy Policy</a>
       </div>
       </div>
-      <hr style="border:1px solid rgb(255, 255, 255); width:100%;">
+      <hr style="border:1px solid rgb(255, 255, 255);">
       <p class="cop">@copyright2023</p>
     </div>
-    <script src="../Controlls/temp.js"></script>
+    <!-- <script  src="../Controlls/script.js"></script> -->
+    <script src="../Controlls/header-Footer-Translation.js"></script>
+    <script src="../Controlls/individualTourTranslation.js"></script>
 </body>
 </html>

@@ -1,123 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About TravAl</title>
-  <link rel="stylesheet" href="../css/Styling.css">
-  <link rel="stylesheet" href="../css/wintermode.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-<body>
-   <!-- -------------------------------HEADER---------------------- -->
-   <div class="container1">
-    <header class="header">
-    <nav class="navbar1">
-      <div class="brand-titlee"> <a href="#"><img src="../Images/location.png" id="location" alt="location"></a></div>
-      <div class="elements">
-        <ul>
-          <li><a href="./index.html" class="l" id="l0">Home</a></li>
-    <li><a href="#" class="l" id="l1">Tours</a></li>
-    <li><a href="./aboutUs1.html" class="l" id="l2">About Us</a></li>
-    <li><a href="./contact.html" class="l" id="l3">Contacts</a></li>
-  </ul>
-  </div>
-  </nav>
-  <nav class="navbar2">
-    <div class="btnn summer-mode" >
-      <div class="btnn__indicator summer-mode">
-        <div class="btnn__icon-container">
-          <i class="btnn__icon fa-solid summer-mode"></i>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About TravAl</title>
+    <link rel="icon" href="../Images/Logo/FavLogo.png"/>
+    <link rel="stylesheet" href="../css/Styling.css" />
+    <link rel="stylesheet" href="../css/wintermode.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <!-- -------------------------------HEADER---------------------- -->
+    <div class="container1 summer-mode">
+      <header class="header">
+        <nav class="navbar1">
+          <div class="brand-titlee">
+            <a href="#"
+              ><img src="../Images/location.png" id="location" alt="location"
+            /></a>
+          </div>
+          <div class="elements">
+            <ul>
+              <li><a href="./index.html" class="l" id="l0">Home</a></li>
+              <li><a href="./tours.html" class="l" id="l1">Tours</a></li>
+              <li><a href="./aboutUs1.html" class="l" id="l2">About Us</a></li>
+              <li><a href="./contact.html" class="l" id="l3">Contacts</a></li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="navbar2">
+          <div class="btnn summer-mode">
+            <div class="btnn__indicator summer-mode">
+              <div class="btnn__icon-container">
+                <i class="btnn__icon fa-solid summer-mode"></i>
+              </div>
+            </div>
+          </div>
+          <button class="booking">Book a Tour</button>
+
+          <div class="lang-menuu">
+            <div class="selected-langg"></div>
+            <ul>
+              <li>
+                <a id="en" class="lang-btn active" href="" language="english"
+                  >English</a
+                >
+              </li>
+              <li>
+                <a id="de" class="lang-btn" href="" language="german">German</a>
+              </li>
+              <li>
+                <a id="it" class="lang-btn" href="" language="italian"
+                  >Italian</a
+                >
+              </li>
+              <li>
+                <a id="fr" class="lang-btn" href="" language="french">French</a>
+              </li>
+              <li>
+                <a id="es" class="lang-btn" href="" language="espanol"
+                  >Espanol</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="" class="toggle-buttonn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+        </nav>
+      </header>
+    </div>
+
+    <div class="titlee summer-mode" id="t">
+      <p id="paragraph">About TravAl</p>
+    </div>
+    <!-- ---------------------------------HEADER FINISHED---------------------------- -->
+    <div class="ourMission">
+      <p class="title">Our Mission</p>
+      <p></p>
+      <p class="content">
+        “Traveling and connecting with places and people is so important to us,
+        it's the cornerstone of why TravAl exists. We believe that traveling
+        broadens the mind and changes the way you think. The people you meet and
+        the experiences you have give you an improved ability to empathize with
+        different situations and people.”
+      </p>
+    </div>
+    <div class="shortNav">
+      <ul>
+        <li>
+          <i class="fa-solid fa-people-group fa-bounce"></i>
+          <a href="./ourStaff1.html" id="staff">Our staff</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-briefcase fa-bounce"></i>
+          <a href="" id="work">Our work</a>
+        </li>
+        <li id="join-us-icon">
+          <i class="fa-solid fa-briefcase fa-bounce"></i>
+          <a href="#" id="join-us">Join us</a>
+        </li>
+      </ul>
+    </div>
+    <div class="travAlCards">
+      <div class="ourCompany">
+        <h1 style="margin: 0">
+          <i class="inIcon fa-solid fa-circle-info"></i>
+        </h1>
+        <h1 class="t"><img src="../Images/title.png" alt="" id="t1" /></h1>
+        <p class="ourCompany1">
+          TravAl is an easy-to-use travel platform where you can book and manage
+          trips for free. Enjoy exclusive rates, earn loyalty points, and
+          benefit from complimentary 24/7 support from the leading travel
+          management company CWT.
+        </p>
+      </div>
+      <div class="ourGoal">
+        <h1 style="margin: 0"><i class="inIcon fa-solid fa-bullseye"></i></h1>
+        <h1 class="t"><img src="../Images/title2.png" alt="" id="t2" /></h1>
+        <p class="ourGoal1">
+          At TravAl is all about the journey, helping you explore new challenges
+          in a place where you can be your best self. We’ve always been
+          pioneers, with a vision to shape the future of travel through cutting
+          edge technology, to make it easier for everyone to enjoy amazing
+          experiences wherever they go.
+        </p>
+      </div>
+    </div>
+    <div class="welcome">
+      <p class="text">Choose TravAl for unforgettable Albanian vacations.</p>
+      <p class="welcomeText">Mirësevini</p>
+    </div>
+    <div id="join-us-popup-container"></div>
+    <!-- -----------------------FOOTER------------------ -->
+    <div class="container2 summer-mode" id="c2">
+      <div class="shore-part">
+        <div class="sub summer-mode" id="sub">
+          <h1 id="subscribe">Subscribe</h1>
+          <p id="subscribeText">be the first who knows</p>
+        </div>
+        <button class="btn" id="btnn">Subscribe</button>
+      </div>
+      <div class="shore2">
+        <div class="socials">
+          <ul>
+            <li><i class="footer__icons fa-brands fa-square-facebook"></i></li>
+            <li>
+              <i
+                class="footer__icons fa-brands fa-square-instagram"
+                style="color: #7a4b81"
+              ></i>
+            </li>
+            <li><i class="footer__icons fa-solid fa-envelope"></i></li>
+            <li>
+              <i
+                class="footer__icons fa-brands fa-linkedin"
+                style="color: #1a3d7a"
+              ></i>
+            </li>
+          </ul>
+        </div>
+        <div class="others">
+          <a href="" id="f1">FAQs</a>
+          <a href="" id="f2">Terms of Service</a>
+          <a href="" id="f3">Privacy Policy</a>
         </div>
       </div>
+      <hr style="border: 1px solid rgb(255, 255, 255)" />
+      <p class="cop">@copyright2023</p>
     </div>
-    <button class="booking">Book a Tour</button>
-  
-    <div class="lang-menuu">
-      <div class="selected-langg">
-      </div>
-      <ul>
-        <li><a id="en" class="lang-btn active" href="" language="english" >English</a></li>
-        <li><a id="de" class="lang-btn" href="" language="german">German</a></li>
-        <li><a id="it" class="lang-btn" href="" language="italian">Italian</a></li>
-        <li><a id="fr" class="lang-btn" href="" language="french">French</a></li>
-        <li><a id="es" class="lang-btn" href="" language="espanol">Espanol</a></li>
-      </ul>
-    </div>
-    <a href="" class="toggle-buttonn">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </a>
-  </nav>
-  </header>
-  </div>
 
-  <div class="titlee summer-mode" id="t">
-    <p>About TravAl</p>
-  </div>
-  <!-- ---------------------------------HEADER FINISHED---------------------------- -->
-  <div class="ourMission">
-    <p class="title">Our Mission<p>
-    <p class="content">“Traveling and connecting with places and people is so important to us, it’s the cornerstone of why TravAl exists.
-      We believe that traveling broadens the mind and changes the way you think. The people you meet and the experiences you have give you an improved ability to empathize with different situations and people.”</p>
-  </div>
-  <div class="shortNav">
-    <ul>
-      <li><i class="fa-solid fa-people-group fa-bounce"></i> <a href="./ourStaff1.html">Our staff</a></li>
-      <li><i class="fa-solid fa-briefcase fa-bounce"></i>  <a href="">Our work</a></li>
-      <li id="join-us-icon"><i class="fa-solid fa-person-circle-plus fa-bounce"></i> Join Us</li>
-    </ul>
-  </div>
-  <div class="travAlCards">
-    <div class="ourCompany">
-      <h1 style="margin: 0;"><i class="inIcon fa-solid fa-circle-info"></i></h1>
-      <h1 class="t"><img src="../Images/title.png" alt="" id="t1"></h1>
-      <p>TravAl is an easy-to-use travel platform where you can book and manage trips for free.
-        Enjoy exclusive rates, earn loyalty points, and benefit from complimentary 24/7 support from the leading travel management company CWT.</p>
-    </div>
-    <div class="ourGoal">
-      <h1 style="margin: 0;"><i class="inIcon fa-solid fa-bullseye"></i></h1>
-      <h1 class="t"><img src="../Images/title2.png" alt="" id="t2"></h1>
-      <p>At TravAl is all about the journey, helping you explore new challenges in a place where you can be your best self. We’ve always been pioneers, with a vision to shape the future of travel through cutting edge technology, to make it easier for everyone to enjoy amazing experiences wherever they go.</p>
-    </div>
-  </div>
-  <div class="welcome">
-    <p class="text">Choose TravAl for unforgettable Albanian vacations.</p>
-    <p class="welcomeText">Mirësevini</p>
-  </div>
-  
-  <!-- -----------------------FOOTER------------------ -->
-  <div class="container2" id="c2">
-    <div class="shore-part">
-      <div class="sub" id="sub">
-        <h1>Subscribe</h1>
-        <p>be the first who knows</p>
-      </div>
-      <button class="btn">Subscribe</button>
-    </div>
-    <div class="shore2">
-      <div class="socials">
-      <ul>
-        <li><i class="footer__icons fa-brands fa-square-facebook"></i></li>
-        <li><i class="footer__icons fa-brands fa-square-instagram" style="color: #7a4b81;"></i></li>
-        <li><i class="footer__icons fa-solid fa-envelope"></i></li>
-        <li><i class="footer__icons fa-brands fa-linkedin" style="color: #1a3d7a;"></i></li>
-      </ul>
-    </div>
-    <div class="others">
-      <a href="">FAQs</a>
-      <a href="">Terms of Service</a>
-      <a href="">Privacy Policy</a>
-    </div>
-    </div>
-    <hr style="border:1px solid rgb(255, 255, 255);">
-    <p class="cop">@copyright2023</p>
-  </div>
-  <div id="join-us-popup-container"></div>
-  
-  <!-- <script src="../Controlls/script.js"></script> -->
-  <script src="../Controlls/load-join-us.js"></script>
-  <script src="../Controlls/temp.js"></script>
-</body>
+    <!-- <script src="../Controlls/script.js"></script> -->
+    <script src="../Controlls/load-join-us.js"></script>
+    <script src="../Controlls/temp.js"></script>
+    <script src="../Controlls/header-Footer-Translation.js"></script>
+    <script src="../Controlls/aboutUsTranslation.js"></script>
+  </body>
 </html>

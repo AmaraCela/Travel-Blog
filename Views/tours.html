@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>TravAl Tours</title>
-        <link rel="stylesheet" href="../css/tours.css">
+        <link rel="icon" href="../Images/Logo/FavLogo.png">
         <link rel="stylesheet" href="../css/Styling.css">
         <link rel="stylesheet" href="../css/wintermode.css">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Lobster+Two&family=Montserrat:wght@400;600&family=Roboto:wght@100;400&family=Ubuntu&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
         <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Lobster&display=swap" rel="stylesheet">
     </head>
     <body class="summer-mode tours-bg">
-        <img id="main-img" class="summer-mode main-img" src="../Images/summer-tours.jpg" alt="main image">
+        <img id="main-img-tours" class="summer-mode main-img" src="../Images/summer-tours.jpg" alt="main image">
         <div class="container1">
             <header class="header">
             <nav class="navbar1">
@@ -58,7 +58,7 @@
           </header>
           </div>
           <div class="title">
-            <p class="al" id="main-p">Spend an unforgettable summer with TravAl!</p>
+            <p class="al summer-mode" id="main-p-tours">Spend an unforgettable summer with TravAl!</p>
        
 
           </div> 
@@ -74,10 +74,10 @@
     <img id="filter-img" src="../Images/filter.png" alt="">
     <div id="filter-div">
         <div class="initial-div">
-        <p class="filter-p">Filter by :</p>
+        <p class="filter-p" id="filter">Filter by :</p>
         <form action="" id="categories-form">
-            <input class="radio-bt" type="radio" name="criteria" id="price"><label class="filter-p" for="price">Price</label><br>    
-            <input class="radio-bt" type="radio" name="criteria" id="numberOfDays"><label class="filter-p" for="numberOfDays">Number of days</label>
+            <input class="radio-bt" type="radio" name="criteria" id="price"><label class="filter-p" for="price" id="filterLabel">Price</label><br>    
+            <input class="radio-bt" type="radio" name="criteria" id="numberOfDays"><label class="filter-p" for="numberOfDays" id="numOfDays">Number of days</label>
         </form>
         <img id="closing-x" src="../Images/X.png" alt="">
         <div class="filter-selections">
@@ -90,7 +90,7 @@
         </div>
         </div> 
         <div class="price-form">
-            <p class="filter-p">Slide or input the maximum price:</p>
+            <p class="filter-p" id="slide">Slide or input the maximum price:</p>
             <div class="range">
             <input type="range" step="1" name="maxPrice" id="maxPrice" min="50" max="500" value="250">
             <input type="number" min="50" max="500" class="value" value="250">
@@ -98,17 +98,17 @@
         </div>
 
         <div class="days-form">
-            <label for="numDays">
+            <label for="numDays" id="select">
                 Select the number of days: 
             </label>
           <select name="numDays" id="numDays">
-            <option value="1">1 day</option>
-            <option value="2">2 days</option>
-            <option value="3">3 days</option>
-            <option value="4">4 days</option>
-            <option value="5">5 days</option>
-            <option value="6">6 days</option>
-            <option value="7">7 days</option>
+            <option value="1" id="option1">1 day</option>
+            <option value="2" id="option2">2 days</option>
+            <option value="3" id="option3">3 days</option>
+            <option value="4" id="option4">4 days</option>
+            <option value="5" id="option5">5 days</option>
+            <option value="6" id="option6">6 days</option>
+            <option value="7" id="option7">7 days</option>
           </select>
         </div>
     </div>
@@ -120,13 +120,13 @@
             <div class="inner">
             <div class="front-card">
                 <img class="card-img" src="../Images/dhermi.jpeg" alt="Dhermi">
-                <p class="front-p">
+                <p class="front-p" id="dhermi">
                     Dhermi Paradise
                 </p>
             </div>
             <div class="back-card" title="Tap for more">
-                <p class="tag" id="5">5 day tours</p>
-                <p class="back-p"><b>Dhermi Tour </b></p><br>
+                <p class="tag five" id="5">5 day tours</p>
+                <p class="back-p" id="dhermiTour"><b>Dhermi Tour </b></p><br>
                     <hr>
                     13-18 August <br>
                     20-25 August 
@@ -143,13 +143,13 @@
             <div class="inner">
             <div class="front-card">
                 <img class="card-img" src="../Images/ksamil.jpg" alt="Ksamil">
-                <p class="front-p">
+                <p class="front-p" id="ksamil">
                     Postcard from Ksamil
                 </p>
             </div>
             <div class="back-card">
-                <p class="tag" id="5">5 day tours</p>
-                <p class="back-p"><b>Ksamil Tour </b></p><br>
+                <p class="tag five" id="5">5 day tours</p>
+                <p class="back-p" id="ksamilTour"><b>Ksamil Tour </b></p><br>
                     <hr>
                     13-18 August <br>
                     20-25 August
@@ -167,13 +167,13 @@
             <div class="inner">
             <div class="front-card">
                 <img class="card-img" src="../Images/borsh.jpg" alt="Borsh">
-                <p class="front-p">
+                <p class="front-p" id="borsh">
                     Borsh Paradise
                 </p>
             </div>
             <div class="back-card">
-                <p class="tag" id="3">3 day tours</p>
-                <p class="back-p"><b>Borsh Tour</b></p> <br>
+                <p class="tag three" id="3">3 day tours</p>
+                <p class="back-p" id="borshTour"><b>Borsh Tour</b></p> <br>
                     <hr>
                     13-16 August <br>
                     17-20 August
@@ -191,13 +191,13 @@
             <div class="inner">
             <div class="front-card">
                 <img class="card-img" src="../Images/gjipe.jpg" alt="Gjipe">
-                <p class="front-p">
+                <p class="front-p" id="gjipe">
                     Gjipe Paradise
                 </p>
             </div>
             <div class="back-card">
-                <p class="tag" id="2">2 day tours</p>
-                <p class="back-p"><b>Gjipe Tour</b></p><br>
+                <p class="tag two" id="2">2 day tours</p>
+                <p class="back-p" id="gjipeTour"><b>Gjipe Tour</b></p><br>
                     <hr>
                     13-15 August <br>
                     16-18 August <br>
@@ -215,13 +215,13 @@
             <div class="inner">
             <div class="front-card">
                 <img class="card-img" src="../Images/ranahedhur.jpeg" alt="Rana e hedhur">
-                <p class="front-p">
+                <p class="front-p" id="rana">
                     Visit Rana e Hedhur
                 </p>
             </div>
             <div class="back-card">
-                <p class="tag" id="1">1 day tours</p>
-                <p class="back-p"><b>Rana e Hedhur Tour </b></p><br>
+                <p class="tag one" id="1">1 day tours</p>
+                <p class="back-p" id="ranaTour"><b>Rana e Hedhur Tour </b></p><br>
                     <hr>
                     13, 14, 15, 16, 17, 18, 19, 20 August
                 
@@ -238,13 +238,13 @@
             <div class="inner">
             <div class="front-card">
                 <img class="card-img" src="../Images/jale.jpeg" alt="Jale">
-                <p class="front-p">
+                <p class="front-p" id="Jale">
                     Postcard from Jale
                 </p>
             </div>
             <div class="back-card">
-                <p class="tag" id="5">5 day tours</p>
-                <p class="back-p"><b>Jale Tour </b></p><br>
+                <p class="tag five" id="5">5 day tours</p>
+                <p class="back-p" id="jaleTour"><b>Jale Tour </b></p><br>
                     <hr>
                     13-18 August <br>
                     20-25 August
@@ -262,13 +262,13 @@
             <div class="inner">
             <div class="front-card">
                 <img class="card-img" src="../Images/livadh.jpeg" alt="Livadh">
-                <p class="front-p">
+                <p class="front-p" id="Livadhi">
                     Visit Livadhi Beach
                 </p>
             </div>
             <div class="back-card" >
-                <p class="tag" id="4">4 day tours</p>
-                <p class="back-p"><b>Livadhi Tour </b></p><br>
+                <p class="tag four" id="4">4 day tours</p>
+                <p class="back-p" id="livadhiTour"><b>Livadhi Tour </b></p><br>
                     <hr>
                     13-17 August <br>
                     20-24 August
@@ -286,13 +286,13 @@
             <div class="inner">
             <div class="front-card">
                 <img class="card-img" src="../Images/zvernec.jpeg" alt="Zvernec">
-                <p class="front-p">
+                <p class="front-p" id="zvernec">
                     Take a tour in Zvernec
                 </p>
             </div>
             <div class="back-card">
-                <p class="tag" id="1">1 day tours</p>
-                <p class="back-p"><b>Zvernec Tour</b> </p> <br>
+                <p class="tag one" id="1">1 day tours</p>
+                <p class="back-p" id="zvernecTour"><b>Zvernec Tour</b> </p> <br>
                     <hr>
                     13, 14, 15, 16, 17, 18, 19, 20 August
                
@@ -309,13 +309,13 @@
             <div class="inner">
             <div class="front-card">
                 <img class="card-img" src="../Images/saranda.jpg" alt="Saranda">
-                <p class="front-p">
+                <p class="front-p" id="saranda">
                     Get lost in Saranda
                 </p>
             </div>
             <div class="back-card">
-                <p class="tag" id="5">5 day tours</p>
-                <p class="back-p"><b>Saranda Tour</b> </p><br>
+                <p class="tag five" id="5">5 day tours</p>
+                <p class="back-p" id="sarandaTour"><b>Saranda Tour</b> </p><br>
                     <hr>
                     13-18 August <br>
                     20-25 August
@@ -333,32 +333,35 @@
 
     <!-------------------------------------footer------------------------------>
     <div class="container2 summer-mode" id="c2">
-        <div class="shore-part">
-          <div class="sub summer-mode" id="sub">
-            <h1>Subscribe</h1>
-            <p>be the first who knows</p>
-          </div>
-          <button class="btn">Subscribe</button>
+      <div class="shore-part">
+        <div class="sub summer-mode" id="sub">
+          <h1 id="subscribe">Subscribe</h1>
+          <p id="subscribeText">be the first who knows</p>
         </div>
-        <div class="shore2">
-          <div class="socials">
-          <ul>
-            <li><i class="footer__icons fa-brands fa-square-facebook"></i></li>
-            <li><i class="footer__icons fa-brands fa-square-instagram" style="color: #7a4b81;"></i></li>
-            <li><i class="footer__icons fa-solid fa-envelope"></i></li>
-            <li><i class="footer__icons fa-brands fa-linkedin" style="color: #1a3d7a;"></i></li>
-          </ul>
-        </div>
-        <div class="others">
-          <a href="">FAQs</a>
-          <a href="">Terms of Service</a>
-          <a href="">Privacy Policy</a>
-        </div>
-        </div>
-        <hr style="border:1px solid rgb(255, 255, 255);">
-        <p class="cop">@copyright2023</p>
+        <button class="btn" id="btnn">Subscribe</button>
       </div>
+      <div class="shore2">
+        <div class="socials">
+        <ul>
+          <li><i class="footer__icons fa-brands fa-square-facebook"></i></li>
+          <li><i class="footer__icons fa-brands fa-square-instagram" style="color: #7a4b81;"></i></li>
+          <li><i class="footer__icons fa-solid fa-envelope"></i></li>
+          <li><i class="footer__icons fa-brands fa-linkedin" style="color: #1a3d7a;"></i></li>
+        </ul>
+      </div>
+      <div class="others">
+        <a href="" id="f1">FAQs</a>
+        <a href="" id="f2">Terms of Service</a>
+        <a href="" id="f3">Privacy Policy</a>
+      </div>
+      </div>
+      <hr style="border:1px solid rgb(255, 255, 255);">
+      <p class="cop">@copyright2023</p>
+    </div>
+
 <script src="../Controlls/temp.js"></script>
 <script src="../Controlls/filter.js"></script>
+<script src="../Controlls/header-Footer-Translation.js"></script>
+<script src="../Controlls/toursTranslation.js"></script>
 </body>
 </html>

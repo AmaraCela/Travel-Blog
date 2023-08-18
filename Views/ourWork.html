@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our work</title>
-    <link rel="stylesheet" href="../css/ourWork.css">
+    <link rel="icon" href="../Images/Logo/FavLogo.png">
+    <!-- <link rel="stylesheet" href="../css/ourWork.css"> -->
     <link rel="stylesheet" href="../css/Styling.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Lobster+Two&family=Montserrat:wght@400;600&family=Roboto:wght@100;400&family=Ubuntu&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
@@ -14,8 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Lobster&display=swap" rel="stylesheet">
 </head>
-<body>
-  <img id="main-img" src="../Images/bus.jpg" alt="main image" height="600px">
+<body class="ourWorkBg">
+  <img id="main-img-ourWork" src="../Images/bus.jpg" alt="main image" height="600px">
   <div class="container1">
     <header class="header">
     <nav class="navbar1">
@@ -63,20 +64,20 @@
 <div class="div-main">
   <div class="work-card">
     <img src="../Images/safety.png" class="work-icon" alt="">
-    <h2 class="work-card-h2">Safety</h2>
-    <p class="work-card-p">
+    <h2 class="work-card-h2" id="safety">Safety</h2>
+    <p class="work-card-p" id="paragraph">
       Experience a safe trip, thanks to our rigorous maintenance and experienced drivers.
     </p>
   </div>
   <div class="work-card-middle">
-   <p class="middle-p">Interested to find out more? </p>
+   <p class="middle-p" id="question">Interested to find out more? </p>
    <div class="middle-contact"><a class="middle-a" href="./contact.html">Contact Us</a></div>
    <img src="../Images/pointer.webp" id="pointer" height="30px" width="30px" alt="">
   </div>
   <div class="work-card">
     <img src="../Images/experience.png" class="work-icon" alt="">
-    <h2 class="work-card-h2">Experience</h2>
-    <p class="work-card-p">
+    <h2 class="work-card-h2" id="experience">Experience</h2>
+    <p class="work-card-p" id="paragraph1">
       With over 20 years of experience, TravAl remains the most trusted company in the market.  
     </p>
   </div>
@@ -94,22 +95,22 @@
   <img src="../Images/left-arrow.png" alt="left-arrow" class="arrows">
   <div class="inner-carousel">
     <img class="carousel-img" id="0" src="../Images/tours1.jpg" alt="carousel-img">
-    <p class="carousel-card-p">
+    <p class="carousel-card-p" id="p1">
       Memory from Trip to Berat <br>
       28/03/2021
     </p>
     <img class="carousel-img" id="1" src="../Images/tours2.jpeg" alt="carousel-img">
-    <p class="carousel-card-p">
+    <p class="carousel-card-p" id="p2">
       Memory from Trip to Shkodra <br>
       01/06/2022
     </p>
     <img class="carousel-img" id="2" src="../Images/tours3.webp" alt="carousel-img">
-    <p class="carousel-card-p">
+    <p class="carousel-card-p" id="p3">
       Memory from Trip to Borshi <br>
       28/03/2021
     </p>
     <img class="carousel-img" id="3" src="../Images/tours4.jpg" alt="carousel-img">
-    <p class="carousel-card-p">
+    <p class="carousel-card-p" id="p4">
       Memory from Trip to Kruje <br>
       17/05/2020
     </p>
@@ -166,10 +167,10 @@
 <div class="containerS our-work" id="cs">
   <div class="shore-part">
     <div class="sub our-work-sub">
-      <h1>Subscribe</h1>
-      <p>be the first who knows</p>
+      <h1 id="subscribe">Subscribe</h1>
+      <p id="subscribeText">be the first who knows</p>
     </div>
-    <button class="btn">Subscribe</button>
+    <button class="btn" id="btnn">Subscribe</button>
   </div>
   <div class="shore2">
     <div class="socials">
@@ -181,9 +182,9 @@
     </ul>
   </div>
   <div class="others">
-    <a href="">FAQs</a> 
-    <a href="">Terms of Service</a>
-    <a href="">Privacy Policy</a>
+    <a href="" id="f1">FAQs</a>
+    <a href="" id="f2">Terms of Service</a>
+    <a href="" id="f3">Privacy Policy</a>
   </div>
   </div>
   <hr style="border:1px solid rgb(255, 255, 255);">
@@ -191,5 +192,7 @@
 </div>
 <script src="../Controlls/ourworkCarousel.js"></script>
 <script src="../Controlls/script.js"></script>
+<script src="../Controlls/header-Footer-Translation.js"></script>
+<script src="../Controlls/ourWorkTranslation.js"></script>
 </body>
 </html>
