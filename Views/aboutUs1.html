@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../Images/Logo/FavLogo.png" />
     <title>About TravAl</title>
     <link rel="icon" href="../Images/Logo/FavLogo.png"/>
     <link rel="stylesheet" href="../css/Styling.css" />
@@ -15,9 +16,7 @@
       <header class="header">
         <nav class="navbar1">
           <div class="brand-titlee">
-            <a href="#"
-              ><img src="../Images/location.png" id="location" alt="location"
-            /></a>
+            <a href="./mapPage.html" id="mapBtn"><img src="../Images/location.png" id="location" alt="location"/></a>
           </div>
           <div class="elements">
             <ul>
@@ -42,25 +41,19 @@
             <div class="selected-langg"></div>
             <ul>
               <li>
-                <a id="en" class="lang-btn active" href="" language="english"
-                  >English</a
-                >
+                <a id="en" class="lang-btn active" href="" language="english">English</a>
               </li>
               <li>
                 <a id="de" class="lang-btn" href="" language="german">German</a>
               </li>
               <li>
-                <a id="it" class="lang-btn" href="" language="italian"
-                  >Italian</a
-                >
+                <a id="it" class="lang-btn" href="" language="italian">Italian</a>
               </li>
               <li>
                 <a id="fr" class="lang-btn" href="" language="french">French</a>
               </li>
               <li>
-                <a id="es" class="lang-btn" href="" language="espanol"
-                  >Espanol</a
-                >
+                <a id="es" class="lang-btn" href="" language="espanol">Espanol</a>
               </li>
             </ul>
           </div>
@@ -96,11 +89,11 @@
         </li>
         <li>
           <i class="fa-solid fa-briefcase fa-bounce"></i>
-          <a href="" id="work">Our work</a>
+          <a href="./ourWork.html" id="work">Our work</a>
         </li>
         <li id="join-us-icon">
           <i class="fa-solid fa-briefcase fa-bounce"></i>
-          <a href="#" id="join-us">Join us</a>
+          <span id="join-us">Join us</span>
         </li>
       </ul>
     </div>
@@ -134,7 +127,8 @@
       <p class="welcomeText">Mirësevini</p>
     </div>
     <div id="join-us-popup-container"></div>
-    <!-- -----------------------FOOTER------------------ -->
+    <div id="threeInOne-popup-container"></div>
+    <!-- ----------------------------------------FOOTER---------------------------- -->
     <div class="container2 summer-mode" id="c2">
       <div class="shore-part">
         <div class="sub summer-mode" id="sub">
@@ -145,37 +139,27 @@
       </div>
       <div class="shore2">
         <div class="socials">
-          <ul>
-            <li><i class="footer__icons fa-brands fa-square-facebook"></i></li>
-            <li>
-              <i
-                class="footer__icons fa-brands fa-square-instagram"
-                style="color: #7a4b81"
-              ></i>
-            </li>
-            <li><i class="footer__icons fa-solid fa-envelope"></i></li>
-            <li>
-              <i
-                class="footer__icons fa-brands fa-linkedin"
-                style="color: #1a3d7a"
-              ></i>
-            </li>
-          </ul>
-        </div>
-        <div class="others">
-          <a href="" id="f1">FAQs</a>
-          <a href="" id="f2">Terms of Service</a>
-          <a href="" id="f3">Privacy Policy</a>
-        </div>
+        <ul>
+          <li><i class="footer__icons fa-brands fa-square-facebook"></i></li>
+          <li><i class="footer__icons fa-brands fa-square-instagram" style="color: #7a4b81;"></i></li>
+          <li><i class="footer__icons fa-solid fa-envelope"></i></li>
+          <li><i class="footer__icons fa-brands fa-linkedin" style="color: #1a3d7a;"></i></li>
+        </ul>
       </div>
-      <hr style="border: 1px solid rgb(255, 255, 255)" />
+      <div class="others">
+        <span id="f1" class="popup-button">FAQs</span>
+        <span id="f2" class="popup-button">Terms of Service</span>
+        <span id="f3" class="popup-button">Privacy Policy</span>
+      </div>
+      </div>
+      <hr style="border:1px solid rgb(255, 255, 255);">
       <p class="cop">@copyright2023</p>
     </div>
 
-    <!-- <script src="../Controlls/script.js"></script> -->
-    <script src="../Controlls/load-join-us.js"></script>
-    <script src="../Controlls/temp.js"></script>
     <script src="../Controlls/header-Footer-Translation.js"></script>
     <script src="../Controlls/aboutUsTranslation.js"></script>
+    <script src="../Controlls/temp.js"></script>
+    <script src="../Controlls/load_threeInOne.js"></script>
+    <script src="../Controlls/load-join-us.js"></script>
   </body>
 </html>

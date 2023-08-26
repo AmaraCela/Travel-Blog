@@ -1,0 +1,137 @@
+.map-location-card{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    position: relative;  
+    
+    &&:hover{
+        && .map-location-card-place-ancor{
+            display: flex;
+        }
+    }
+}
+
+.map-location-card-img-container{
+    max-width: 400px;
+    max-height: 400px;
+    
+    && img{
+        width: 100%;
+        height: 100%;
+        min-height: 300px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+}
+
+.map-location-card-information-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .8);
+    padding-top: 8px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 0 20px 20px;
+    transition: .9s ease;
+
+    && .map-location-card-place-name{
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+    }
+
+    && .map-location-card-place-ancor{
+        display: none;
+        width: 100%;
+        justify-content: center;
+        && a{
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            font-size: 1.2rem;
+            padding:10px 20px;
+            /* max-width: 180px; */
+            margin: 13px;
+            background-color: #579BD3;
+            border-radius: 10px;
+            transition: all .3s ease-in-out;
+
+            &&:hover{
+                background-color: #3394e7;
+            }
+        }
+    }
+
+
+}
+
+.material-symbols-outlined{
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    font-size: 1.5rem;
+    color: rgb(223, 219, 25);
+}
+
+.filled-star{
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+}
+
+.clicked-city{
+    fill: rgb(255, 181, 44);
+
+    &&:hover{
+        fill: orange;
+    }
+}
+
+
+@media screen and (max-width: 300px) {
+    .map-location-card{
+        margin:10px 0;
+    }
+
+    .map-location-card-information-container{
+        && .map-location-card-place-name{
+            font-size: 13px;
+        }
+
+        && .map-location-card-place-ancor{
+            && a{
+                font-size: 10px;
+                padding: 5px 6px;
+                width: 80px;
+                margin: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px){
+    .map-location-card-information-container{
+
+        && .map-location-card-place-ancor{
+            && a{
+                font-size: 10px;
+                padding: 5px 6px;
+                width: 80px;
+                margin: 5px;
+            }
+        }
+    }
+}
+
+

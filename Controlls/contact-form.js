@@ -6,7 +6,6 @@ let clickedOutofForm = false;
 
 function disableSubmitButton() {
   submitButton.disabled = true;
-  submitButton.hover = false;
   clickedOutofForm = true;
   submitButton.classList.add("disabled");
   submitButton.classList.remove("enabled");

@@ -8,43 +8,43 @@
     <script src="../Controlls/mapdata.js"></script>
     <script src="../Controlls/Countrymap.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/map.css">
+    <!-- <link rel="stylesheet" href="../css/map.css"> -->
     <link rel="stylesheet" href="../css/Styling.css">
     
 </head>
-<body>
+<body id="map-body">
     <div class="container1">
         <header class="header">
         <nav class="navbar1">
-          <div class="brand-titlee"> <a href="#"><img src="../Images/location.png" id="location" alt="location"></a></div>
+          <div class="brand-titlee"> <a href="./mapSelect.html" id="mapBtn"><img src="../Images/location.png" id="location" alt="location"></a></div>
           <div class="elements">
             <ul>
         <li><a href="./index.html" class="l">Home</a></li>
-        <li><a href="#" class="l">Tours</a></li>
+        <li><a href="./tours.html" class="l">Tours</a></li>
         <li><a href="./aboutUs1.html" class="l">About Us</a></li>
         <li><a href="./contact.html" class="l">Contacts</a></li>
       </ul>
       </div>
       </nav>
       <nav class="navbar2">
-        <!-- <div class="btnn">
+        <div class="btnn">
           <div class="btnn__indicator">
             <div class="btnn__icon-container">
               <i class="btnn__icon fa-solid"></i>
             </div>
           </div>
-        </div> -->
+        </div>
         <button class="booking">Book a Tour</button>
       
         <div class="lang-menuu">
           <div class="selected-langg">
           </div>
           <ul>
-            <li><a class="de" href="">German</a></li>
-            <li><a class="it" href="">Italian</a></li>
-            <li><a class="fr" href="">French</a></li>
-            <li><a class="es" href="">Espanol</a></li>
-            <li><a class="en" href="">English</a></li>
+            <li><a id="en" class="lang-btn active" href="" language="english" >&nbsp;English</a></li>
+            <li><a id="de" class="lang-btn" href="" language="german">&nbsp;German</a></li>
+            <li><a id="it" class="lang-btn" href="" language="italian">&nbsp;Italian</a></li>
+            <li><a id="fr" class="lang-btn" href="" language="french">&nbsp;French</a></li>
+            <li><a id="es" class="lang-btn" href="" language="espanol">&nbsp;Espanol</a></li>
           </ul>
         </div>
         <a href="" class="toggle-buttonn">
@@ -55,7 +55,7 @@
       </nav>
       </header>
       </div>
-    <main>
+    <section id="map-section">
         <div class="container-fluid">
            <div class="row">
                 <div class="col-lg-6 offset-lg-3 col-md-12 mt-5">
@@ -63,35 +63,7 @@
                 </div>
            </div>
         </div>
-    </main>
-    <footer>
-        <div class="container2" id="c2">
-            <div class="shore-part">
-              <div class="sub">
-                <h1>Subscribe</h1>
-                <p>be the first who knows</p>
-              </div>
-              <button class="btn">Subscribe</button>
-            </div>
-            <div class="shore2">
-              <div class="socials">
-              <ul>
-                <li><i class="footer__icons fa-brands fa-square-facebook"></i></li>
-                <li><i class="footer__icons fa-brands fa-square-instagram" style="color: #7a4b81;"></i></li>
-                <li><i class="footer__icons fa-solid fa-envelope"></i></li>
-                <li><i class="footer__icons fa-brands fa-linkedin" style="color: #1a3d7a;"></i></li>
-              </ul>
-            </div>
-            <div class="others">
-              <a href="">FAQs</a>
-              <a href="">Terms of Service</a>
-              <a href="">Privacy Policy</a>
-            </div>
-            </div>
-            <hr style="border:1px solid rgb(255, 255, 255);">
-            <p class="cop">@copyright2023</p>
-          </div>
-    </footer>
+      </section>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="../Controlls/temp.js"></script>

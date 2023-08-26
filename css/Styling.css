@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two&family=Montserrat:wght@400;600&family=Roboto:wght@100;400&family=Ubuntu&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
-
+/* @import url("https://fonts.googleapis.com"); */
 
 /* -----------------------HEADER--------------------- */
 #location{
@@ -116,7 +116,7 @@ header{
 }
 
 .lang-menuu ul li a {
-  width: 100px;
+  width: 120px;
   display: block;
   padding: 5px;
 }
@@ -520,6 +520,9 @@ body{
   margin-left: auto; 
   margin-right: auto; 
 }
+#join-us{
+  font-weight: 650;
+}
 .ourMission{
   padding: 30px;
   margin: 40px;
@@ -911,13 +914,13 @@ body{
 }
 
 .visit{
-  position: absolute; 
+  position: absolute;
   top: 70px;
-  right: 23%; 
-  color: aliceblue; 
-  font-family: 'Lobster', cursive; 
+  color: aliceblue;
+  font-family: 'Lobster', cursive;
   font-size: 40px;
   text-align: center;
+  width: 100%;
 }
 
 .cards:hover .text-div
@@ -1116,13 +1119,14 @@ body{
 	border: none;
 	background: #828184aa;
 	padding: 6px 15px;
-	margin-top: 5px;
-    color: #fff;
+	margin-top: 25px;
+  color: #fff;
     
 }
 
 .carousel .carousel-item .more-btn:hover {
 	background: #8c5bff;
+  
 }
 
 .carousel .carousel-item .more-btn i {
@@ -1344,7 +1348,8 @@ body{
   font-size:30px ;
   margin: 10px;
 }
-.others a:link{
+.others span{
+  cursor:pointer;
   text-decoration: none;
   color: rgb(78 27 27);
   font-weight: 600;
@@ -1352,10 +1357,10 @@ body{
   font-size: 20px;
   font-family: 'Lato';
 }
-.others a:visited{
+/* .others a:visited{
   color:rgb(78, 27, 27);
-}
-.others a:hover{
+} */
+.others span:hover{
   background-color: rgb(128, 100, 66);
   border-radius: 10px;
   padding: 7px;
@@ -1416,15 +1421,16 @@ body{
     background-position: center; */
   }
   
-  .others a{
+  .others span{
     display: list-item;
     list-style: none;
     text-align: center;
     row-gap: 10px;
-  }
-  .others a:link{
     font-size: 18px;
   }
+  /* .others span:link{
+    font-size: 18px;
+  } */
   .others{
     margin: 0;
   }
@@ -1587,13 +1593,11 @@ body{
   margin-bottom: 1px;
 }
 
-hr{
+.hr-tours{
   width: 60%;
+    margin-top: 0;
 }
-.titlee{
-  margin-top: 0!important;
-  margin-bottom: 0!important;
-}
+
 
 .price{
   font-family: 'ABeeZee',sans-serif;
@@ -1619,23 +1623,12 @@ hr{
   cursor: pointer;
 }
 .price-div{
-  /* width: 120px;
-  height: 70px;
-  bottom: 0px;
-  position: relative; */
   
   width: 120px;
   height: 57px;
   bottom: 0px;
   position: relative;
-  /* display: flex;
-  height: 38px;
-  width: 53px;
-  background-color: aliceblue;
- 
-  border-radius: 50%;
-  flex-direction: row;
-  margin-right: 0; */
+
 
 }
 #closing-x
@@ -1669,12 +1662,6 @@ transition: left 0.7s ease;
    display: none;
    flex-direction: column;
    color: #F0E1BA;
-  /*flex-direction: row;
-  background-color: #115f223f; 
-  box-shadow: 5px 5px 5px #527c527d;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 10px; */
 }
 .filter-p{
  font-family: 'ABeeZee', sans-serif;
@@ -1691,11 +1678,6 @@ transition: left 0.7s ease;
 #categories-form{
   padding: 5px;
 }
-/* 
-
-#filter-categories{
-  margin: 16px;
-}*/
 
 .days-form{
 display: none;
@@ -1911,6 +1893,8 @@ transition: transform .1s cubic-bezier(0, 0, .2, 1);
 
   #nextDates, #itinerary{
     display: inline ;
+    
+    margin-left: 20px;
   }
 
   h5{
@@ -2049,6 +2033,15 @@ transition: transform .1s cubic-bezier(0, 0, .2, 1);
   }
 
 
+  @media screen and (max-width:500px)
+  {
+
+    #small-descr{
+      font-size: 20px;
+      top: 50%;
+    }
+  }
+
 
 
 
@@ -2059,6 +2052,13 @@ transition: transform .1s cubic-bezier(0, 0, .2, 1);
   margin: 0;
   background-image: none!important;
   background-color: rgba(67, 68, 72, 1);
+}
+
+.our-work-container2{
+  background-color: #999999;
+  background-image: none;
+  position: relative;
+  top: 300px;
 }
 
 #main-img-ourWork{
@@ -2373,4 +2373,793 @@ opacity: 1;
       font-size: 25px;
   }
 
+}
+/* ------------------ CONTACT PAGE ------------------ */
+/*------------------- contact hero section -----------------------*/
+.contact-msg-container{
+  display: flex;
+  background-color: rgba(217, 217, 217, 0.8);
+  border-radius: 40px;
+}
+
+.contact-msg-img-container{
+  width: fit-content;
+  height: 390px;
+  padding-right: 50px;
+}
+
+.contact-msg-img-container img{
+  width: 100%;
+  height: 100%;
+}
+
+.contact-msg{
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.contact-msg h1{
+  font-family: "Lobster Two", cursive;
+  font-size: 96px;
+
+}
+
+.contact-msg span{
+  font-family: "ABeeZee", sans-serif;
+  font-size: 32px;
+  justify-self: center;
+  margin-top: 35px;
+}
+
+.contact-hero{
+  background-image: url("../Images/ContactPageImg/palm\ trees.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 1148px) {
+  .contact-msg-container{
+      padding: 0px 50px;
+  }
+
+  .contact-msg-img-container{
+      width: 100%;
+      height: 300px;
+      padding-right: 0px;
+  }
+
+  .contact-msg{
+      padding-left: 0px;
+  }
+
+  .contact-msg h1{
+      font-size: 60px;
+      text-align: center;
+  }
+
+  .contact-msg span{
+      font-size: 24px;
+  }
+  
+}
+
+@media screen and (max-width: 767px) {
+  .contact-msg span{
+      text-align: center;
+      padding: 15px 20px;
+  }
+
+  .contact-msg h1{
+      font-size: 45px;
+  }
+}
+
+/* -----------------------contact card---------------------- */
+
+.red-icon {
+  color: rgba(255, 0, 0, 0.477);
+}
+
+.content-container{
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.content-container img,
+.content-container iframe{
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.contact-method-text-container{
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(79, 75, 75, 0.9);
+  width: 100%;
+  border-radius: 0 0 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 10px 0px;
+}
+
+.contact-method-text-container #phone-contact-text{
+  align-items: center;
+}
+
+.contact-card{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+  margin-top: -40px;
+}
+
+.contact-card:hover{
+  margin-top: -60px;
+  transition: 0.5s;
+}
+
+#contact-method-section{
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 35%,
+      rgba(13, 46, 79, 1)90%,
+      rgba(48, 66, 96, 0)100%
+  );
+  background-blend-mode: multiply;
+  position: relative;
+  z-index: 1;
+}
+
+.dark-map{
+  filter: invert(100%) hue-rotate(180deg);
+  background-color: #1c1c1c;
+}
+
+/* .contact-method-text{
+  color: greenyellow;
+} */
+
+@media screen and (max-width: 350px) {
+ .contact-card{
+  height: 400px;
+ }
+
+ .content-container{
+  height: 400px;
+ }
+
+  .contact-method-text{
+      /* color: blue; */
+      font-size: 17px;
+ }
+
+ .red-icon{
+  font-size: 20px;
+ }
+}
+
+
+/*-------------------- contact form ----------------------*/
+
+#contact-form-section{
+  margin-top: -105px;
+}
+
+.form-container{
+  background-image: url("../Images/ContactPageImg/camping.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+.contact-form-title{
+  font-family: "ABeeZee", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom:110px;
+  margin-top: 100px;
+  color: white;
+  
+}
+
+.contact-form-input-field{
+  margin: 65px 0;
+  padding: px 0;
+}
+
+.contact-form-input-field .form-control{
+  margin-top: 30px;
+  padding: 15px 15px;
+  font-size: 25px;
+  font-family: "ABeeZee", sans-serif;
+  border-radius: 10px;
+}
+
+.contact-form-input-field .form-control:focus{
+  border: 2px solid #c3810e;
+  box-shadow: 0 0 4px orange;
+}
+
+.center-button button{
+  width: 100%;
+  border: none;
+  color: white;
+  font-size: 35px;
+  font-family: "ABeeZee", sans-serif;
+  border-radius: 10px;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+
+.center-button button:hover{
+  background-color: #c3810e;
+  transition: 0.5s;
+}
+
+.center-button button:focus{
+  background-color: #0e56c3;
+}
+
+.form-input-field .form-control::placeholder{
+  color: rgba(161, 158, 158, 1);
+  font-size: 25px;
+  font-family: "ABeeZee", sans-serif;
+}
+
+.disabled{
+  background-color: #ccc;
+  cursor: not-allowed;
+  &&:hover{
+      background-color: #ccc;
+  }
+}
+
+.disabled:hover{
+  background-color: #ccc;
+}
+
+.enabled{
+  background-color: rgba(218, 137, 16, 0.48);
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 991px) {
+  #contact-form-section{
+      margin-top: -135px;
+  }
+
+  .form-input-field{
+      margin: 25px 0;
+      padding: px 0;
+  }
+}
+
+/* -------------------------join us form ------------------*/
+.join-us-popup-container{
+  background-color: rgba(216, 216, 216, 1);
+  padding: 50px;
+  text-align: center;
+  border-radius: 30px;
+  border: 3px solid #296C81;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.join-popup-title h1{
+  font-family: "Lobster Two", cursive;
+  font-size: 60px;
+  margin-bottom: 30px; 
+}
+
+.join-popup-title h3{
+  font-family: "ABeeZee", sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px; 
+}
+
+
+.join-us-form{
+  margin-top: 10px;
+}
+
+.join-us-form input:not([type="file"]){
+  padding: 20px 15px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+
+  &&::placeholder{
+      font-size: 20px;
+      color: rgba(141, 141, 141, 1);
+  }
+}
+
+.join-us-form input:focus{
+  outline: none;
+  border: 2px solid #1A5164;
+  box-shadow: 0 0 4px #296C81;
+}
+
+.join-us-form input[type="file"]{
+  /* font-size: 15px;
+  border-radius: 19px;
+  margin-bottom: 40px; */
+  display: none;
+
+  /* &&::-webkit-file-upload-button{
+      background-color: #296C81;
+      color: #E8E8E8;
+      padding: 10px 21px;
+      cursor: pointer;
+      font-size: 20px;
+      height: 70px;
+      &&:hover{
+          background-color: rgba(26, 81, 100, 1);
+          transition: 0.5s;
+      }
+  } */
+}
+
+#join-us-file-label{
+  background-color: #fff;
+  color: rgba(141, 141, 141, 1);
+  padding: 10px 21px;
+  cursor: pointer;
+  font-size: 20px;
+  height: 70px;
+  border-radius: 19px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+} 
+
+#join-submit-button{
+  color: #E8E8E8;
+  width: 100%;
+  height: 70px;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#join-submit-button:hover{
+  
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  transition: 0.5s;
+}
+
+#join-submit-button:focus{
+  background-color: rgb(86, 207, 247);
+  transition: 0.5s;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+#join-us-popup{
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  
+}
+
+.inactive-popup{
+  display: none;
+}
+
+.active-join-us-btn{
+  background-color: #296C81;
+
+  &&:hover{
+      background-color: rgba(26, 81, 100, 1);
+  }
+}
+
+.inactive-join-us-btn{
+  background-color: #ccc;
+  cursor: not-allowed;
+
+  &&:hover{
+      background-color: #ccc;
+  }
+}
+
+
+/* -------------------- WInter MODE----------------------  */
+.winter-mode{
+  &&.contact-hero{
+      background-image: url("../Images/ContactPageImg/WinterForest.jpg");
+  }
+
+  &&#contact-method-section{
+      background: linear-gradient(
+          to bottom,
+          rgba(153, 164, 220, 1) 40%,
+          rgba(37, 46, 88, 1) 70%,
+          rgba(20, 23, 38, 1)95%,
+          rgba(20, 23, 38, 0.17)
+      );
+  }
+
+  &&.form-container{
+      background-image: url("../Images/ContactPageImg/WinterCAMPING.jpeg");
+  }
+
+  &&#seasonal_vacation{
+      background-color: rgba(153, 164, 220, 0.7);
+      cursor: pointer;
+  }
+
+  && .enabled{
+      background-color: rgba(153, 164, 220, 0.7);
+      cursor: pointer;
+
+      &&:hover{
+          background-color: rgba(153, 164, 220, 1);
+      }
+  }
+ 
+  &&.IndexTitle{
+      background-image: url("../Images/winter.jpeg");
+  }
+
+  &&.titlee{
+      background-image: url("../Images/aboutUsWinter.jpg");
+  }
+
+
+  /* -------------TOGGLE BUTTON------------------ */
+  &&.btnn{
+    box-shadow: inset 0 8px 60px rgba(0,0,0, .3), 
+                inset 8px 0  8px rgba(0,0,0, .3),
+                inset 0 -4px 4px rgba(0,0,0, .3);
+  }
+  &&.btnn__indicator{
+    transform: translateX(50px);
+    background-color: #2b2b2b;
+    box-shadow: 0 8px 40px rgba(0,0,0, .3);
+  }
+  
+  &&.btnn__icon{
+    color:#fff;
+  }
+
+  @media screen and (min-width:850px) {
+    &&.btnn__indicator{
+      transform: translateX(40px);
+    }
+  }
+
+  @media screen and (max-width:600px){
+    &&.btnn__indicator{
+      transform: translateX(0);
+      background-color: var(--dark-color);
+      box-shadow: 0 8px 40px rgba(0,0,0, .3);
+    }
+  }
+
+  /* ------------------FOOTER------------------- */
+  &&.container2{
+    background-image: url("../Images/snow.jpg");
+  }
+  &&.sub{
+    background-color: rgba(153, 164, 220, 0.3);
+  }
+
+
+  /*------------------------INDEX PAGE CARDS------------------------*/
+  &&.text-div{
+    background-color: #b7bfe6;
+  }
+
+  &&.horizontal-text-div{
+    background-color: #b7bfe6;
+  }
+
+  &&#more-div{
+    background-color: #b7bfe6;
+  }
+  /*------------------------TOURS PAGE------------------------*/
+  &&.tours-bg{
+    background-color:rgb(192 206 218);
+  
+  }
+}
+
+/* ----------------------------ThreeInOnePage---------------------- */
+.co{
+  background-color: rgba(216, 216, 216, 1);
+    padding: 50px;
+    text-align:left;
+    border-radius: 30px;
+    border: 3px solid #296C81;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+}
+.choseTrip{
+  margin-top: 8px;
+  padding: 15px;
+  color: #296C81;
+  font-family: 'Lato';
+  background-color: #3a829e56;
+}
+#faqp1{
+  /* text-align: center; */
+  font-family: 'Lato';
+  font-size: 18px;
+  color: #296C81;
+  font-weight: 600;
+}
+.serviceTitle, .policyTitle{
+  text-align: center;
+  font-family: 'Lato';
+  margin-top: 25px;
+  color: #265a6e;
+  background-color: rgba(176, 181, 106, 0.573);
+  border-radius: 10px;
+  padding: 20px;
+}
+.cookies, .security, .qAnda{
+  color: #555555;
+  font-family: 'Lato';
+}
+
+/* --------------map--------------- */
+#map-section{
+  background-color: #F0E1BA;
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.map{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#map-svg{
+  width: 100%;
+  height: 100%;
+  display: block;
+  
+}
+
+.map-city{
+  fill: #579BD3;
+  stroke: #fff;
+  stroke-width: 5px;
+  transition: all 0.3s ease-in-out;
+
+  &&:hover{
+      fill: #3394e7;
+  }
+}
+
+.location-cards-container{
+  width: 100%;
+  max-height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+@media screen and (max-width: 768px) {
+  #map-svg{
+      width: 100%;
+      height: 100%;
+      display: block;
+      margin-top: 6vh;
+      margin-bottom: 45px;
+  }
+
+}
+
+/* --------------------- Map styles ---------------------  */
+.map-location-card{
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  position: relative;  
+  
+  &&:hover{
+      && .map-location-card-place-ancor{
+          display: flex;
+      }
+  }
+}
+
+.map-location-card-img-container{
+  max-width: 400px;
+  max-height: 400px;
+  
+  && img{
+      width: 100%;
+      height: 100%;
+      min-height: 300px;
+      object-fit: cover;
+      border-radius: 20px;
+  }
+}
+
+.map-location-card-information-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .8);
+  padding: 18px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 0 20px 20px;
+  transition: .9s ease;
+
+  && .map-location-card-place-name{
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: white;
+  }
+
+  && .map-location-card-place-ancor{
+      display: none;
+      width: 100%;
+      justify-content: center;
+      && a{
+          text-decoration: none;
+          text-align: center;
+          color: white;
+          font-size: 1rem;
+          padding:10px 20px;
+          width: 45%;
+          margin: 13px;
+          background-color: #579BD3;
+          border-radius: 10px;
+          transition: all .3s ease-in-out;
+
+          &&:hover{
+              background-color: #3394e7;
+          }
+      }
+  }
+
+
+}
+
+.map-location-card-place-rating .material-symbols-outlined{
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  font-size: 1.5rem;
+  color: rgb(223, 219, 25);
+}
+
+.clicked-city{
+  fill: rgb(255, 181, 44);
+
+  &&:hover{
+      fill: orange;
+  }
+}
+
+circle{
+  fill: red;
+  stroke: white;
+  stroke-width: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.map-location-text{
+  font-size: 45px;
+  fill: black;
+  font-weight: bold;
+
+}
+
+
+@media screen and (max-width: 300px) {
+  .map-location-card{
+      margin:10px 0;
+  }
+
+  .map-location-card-information-container{
+      && .map-location-card-place-name{
+          font-size: 13px;
+      }
+
+      && .map-location-card-place-ancor{
+          && a{
+              font-size: 10px;
+              padding: 5px 6px;
+              width: 80px;
+              margin: 5px;
+          }
+      }
+  }
+}
+
+@media screen and (max-width: 450px){
+  .map-location-card-information-container{
+
+      && .map-location-card-place-ancor{
+          && a{
+              font-size: 10px;
+              padding: 5px 6px;
+              width: 80px;
+              margin: 5px;
+          }
+      }
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px){
+  .map-location-card-information-container{
+
+    && .map-location-card-place-ancor{
+        && a{
+            font-size: 10px;
+            padding: 10px 12px;
+            width: 45%;
+            margin: 5px;
+        }
+    }
+  }
+  
+}
+
+
+
+
+
+
+#threeinone{
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.584);
+}
+
+.accordion-button{
+  font-weight: bold;
 }

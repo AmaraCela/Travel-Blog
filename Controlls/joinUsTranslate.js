@@ -6,7 +6,9 @@ const email = document.querySelector('#email');
 const phone = document.querySelector('#phone');
 const address = document.querySelector('#address');
 const sub = document.querySelector('#sub');
-
+const fileInputField = document.querySelector('#join-us-file-label');
+console.log("file here " + fileInputField);
+console.log("phone here " + phone);
 const joinUsData = {
   "english" : {
     "joinUs" : "Join Us",
@@ -16,6 +18,7 @@ const joinUsData = {
     "email" : "Enter your email",
     "phone" : "Enter your phone number",
     "address" : "Enter your address",
+    "file" : "Upload your CV",
     "sub" : "Submit"
   },
   "german": {
@@ -26,6 +29,7 @@ const joinUsData = {
     "email": "Gib deine E-Mail ein",
     "phone": "Gib deine Telefonnummer ein",
     "address": "Gib deine Adresse ein",
+    "file": "Lade deinen Lebenslauf hoch",
     "sub": "Abschicken"
   },
   "italian": {
@@ -36,6 +40,7 @@ const joinUsData = {
     "email": "Inserisci la tua email",
     "phone": "Inserisci il tuo numero di telefono",
     "address": "Inserisci il tuo indirizzo",
+    "file": "Carica il tuo CV",
     "sub": "Invia"
   },
   "french": {
@@ -46,6 +51,7 @@ const joinUsData = {
     "email": "Entrez votre email",
     "phone": "Entrez votre numéro de téléphone",
     "address": "Entrez votre adresse",
+    "file": "Téléchargez votre CV",
     "sub": "Soumettre"
   },
   "espanol": {
@@ -56,6 +62,7 @@ const joinUsData = {
     "email": "Ingresa tu correo electrónico",
     "phone": "Ingresa tu número de teléfono",
     "address": "Ingresa tu dirección",
+    "file": "Sube tu CV",
     "sub": "Enviar"
   }
 }
@@ -70,10 +77,14 @@ function updateJoinContent(selectedLanguage){
   email.placeholder = joinUsData[selectedLanguage].email;
   phone.placeholder = joinUsData[selectedLanguage].phone;
   address.placeholder = joinUsData[selectedLanguage].address;
+  fileInputField.textContent = joinUsData[selectedLanguage].file;
   sub.textContent = joinUsData[selectedLanguage].sub;
 
   localStorage.setItem('selectedLanguage', selectedLanguage);
 }
+
+updateJoinContent(storedLanguage);
+
 
 buttons.forEach(button =>{
   button.addEventListener("click", (event)=>{
@@ -81,7 +92,7 @@ buttons.forEach(button =>{
     langMenu.querySelector('.active').classList.remove('active');
     button.classList.add('active');
 
-    const selectedLanguage = button.getAttribute('language');
+    selectedLanguage = button.getAttribute('language');
     console.log(selectedLanguage);
     updateJoinContent(selectedLanguage);
   });

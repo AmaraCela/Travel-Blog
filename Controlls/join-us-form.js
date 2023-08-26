@@ -27,7 +27,6 @@ console.log(requiredInputs);
 function disableSubmitButton() {
     JoinUsSubmitButton.disabled = true;
     
-   
     JoinUsSubmitButton.classList.add("inactive-join-us-btn");
     JoinUsSubmitButton.classList.remove("active-join-us-btn");
 }
@@ -69,7 +68,21 @@ function validateInputs() {
     return formIsValid;
 }
 
+const fileInput = document.getElementById('join-us-file');
+const fileInputLabel = document.querySelector('#join-us-file-label');
+let previousFileLabelText = fileInputLabel.textContent;
+
+function updateFileInputLabel() {
+    if (fileInput.files.length > 0) {
+        fileInputLabel.textContent = fileInput.files[0].name;
+    } else {
+        fileInputLabel.textContent = "...";
+    }
+}
+
 function handleInputChange() {
+    updateFileInputLabel();
+
     if (validateInputs()) {
       enableSubmitButton();
     }else{
@@ -88,8 +101,11 @@ function handleInputChange() {
       disableSubmitButton();
       hasSubmitedOnce = true;
     }
-  });
+});
+
+  fileInput.addEventListener('change', updateFileInputLabel);
 
   requiredInputs.forEach(input => {
     input.addEventListener("input", handleInputChange);
   });
+

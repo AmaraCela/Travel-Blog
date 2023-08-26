@@ -99,15 +99,16 @@ function updateContent(selectedLanguage, selectedFlag){
 document.querySelector(".selected-langg").style.backgroundImage = storedFlag;
 updateContent(storedLanguage, storedFlag);
 
+let selectedLanguage = storedLanguage;
 buttons.forEach(button =>{
   button.addEventListener("click", (event)=>{
     event.preventDefault();
     langMenu.querySelector('.active').classList.remove('active');
     button.classList.add('active');
 
-    const selectedLanguage = button.getAttribute('language');
+    selectedLanguage = button.getAttribute('language');
     let selectedFlag = ""
-    console.log(selectedLanguage);
+    // console.log('local ',localStorage.getItem('selectedLanguage') );
     if(selectedLanguage == "german"){
       selectedFlag = "url('https://flagsapi.com/BE/flat/32.png')";
     }else if(selectedLanguage=="italian"){
