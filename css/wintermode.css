@@ -25,6 +25,10 @@
     && .enabled{
         background-color: rgba(153, 164, 220, 0.7);
         cursor: pointer;
+
+        &&:hover{
+            background-color: rgba(153, 164, 220, 1);
+        }
     }
    
     &&.IndexTitle{
@@ -83,11 +87,14 @@
     &&.horizontal-text-div{
       background-color: #b7bfe6;
     }
+
+    &&#more-div{
+      background-color: #b7bfe6;
+    }
     /*------------------------TOURS PAGE------------------------*/
     &&.tours-bg{
       background-color:rgb(192 206 218);
     
     }
-
-    
 }
+

@@ -1,3 +1,4 @@
+const l0 = document.querySelector('#l0');
 const main = document.querySelector('#main-p-individual');
 const small = document.querySelector('#small-descr');
 const descr = document.querySelector('#descr');
@@ -14,6 +15,7 @@ const value = document.querySelector('#value');
 
 const indTourData = {
   "english" :{
+    "l0" : "Home",
     "main" : "Ksamil Tour",
     "small" : "5 day tour - 100$",
     "descr" : "Description of the trip",
@@ -28,6 +30,7 @@ const indTourData = {
     "value" : "Proceed"
   },
   "german" :{
+    "l0" : "Heim",
     "main": "Ksamil Tour",
     "small": "5-Tage-Tour - 100 $",
     "descr": "Beschreibung der Reise",
@@ -42,6 +45,7 @@ const indTourData = {
     "value" : "Fortfahren"
   },
   "italian":{
+    "l0" : "Casa",
     "main": "Tour a Ksamil",
     "small": "Tour di 5 giorni - 100 $",
     "descr": "Descrizione del viaggio",
@@ -56,6 +60,7 @@ const indTourData = {
     "value" : "Procedere"
   },
   "french": {
+    "l0" : "Maison",
     "main": "Tour à Ksamil",
     "small": "Tour de 5 jours - 100 $",
     "descr": "Description du voyage",
@@ -71,6 +76,7 @@ const indTourData = {
   },
   
   "espanol": {
+    "l0" : "Hogar",
     "main": "Tour a Ksamil",
     "small": "Tour de 5 días - 100 $",
     "descr": "Descripción del viaje",
@@ -87,6 +93,7 @@ const indTourData = {
 }
 
 function updateIndTourContent(selectedLanguage, selectedFlag){
+  l0.textContent = indTourData[selectedLanguage].l0;
   main.textContent = indTourData[selectedLanguage].main;
   small.textContent = indTourData[selectedLanguage].small;
   descr.textContent = indTourData[selectedLanguage].descr;
@@ -113,7 +120,7 @@ buttons.forEach(button =>{
     langMenu.querySelector('.active').classList.remove('active');
     button.classList.add('active');
 
-    const selectedLanguage = button.getAttribute('language');
+    selectedLanguage = button.getAttribute('language');
   console.log(selectedLanguage);
   if(selectedLanguage == "german"){
     selectedFlag = "url('https://flagsapi.com/BE/flat/32.png')";

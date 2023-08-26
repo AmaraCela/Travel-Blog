@@ -1,9 +1,10 @@
+const l0 = document.querySelector('#l0');
 const paragraph = document.querySelector('#paragraph');
 const title = document.querySelector('.title');
 const content = document.querySelector('.content');
 const staff = document.querySelector('#staff');
 const work = document.querySelector('#work');
-const join = document.querySelector('#join-us-icon');
+const join = document.querySelector('#join-us');
 const ourCompany = document.querySelector('.ourCompany1');
 const ourGoal = document.querySelector('.ourGoal1');
 const text = document.querySelector('.text')
@@ -11,6 +12,7 @@ const text = document.querySelector('.text')
 
 const aboutUsData = {
   "english" :{
+    "l0" : "Home",
     "paragraph": "About TravAl",
     "title": "Our Mission",
     "content": "Traveling and connecting with places and people is so important to us, it’s the cornerstone of why TravAl exists. We believe that traveling broadens the mind and changes the way you think. The people you meet and the experiences you have give you an improved ability to empathize with different situations and people.",
@@ -22,6 +24,7 @@ const aboutUsData = {
     "text" : "Choose TravAl for unforgettable Albanian vacations."
   },
   "german" :{
+    "l0" : "Heim",
     "paragraph": "Über TravAl",
     "title": "Unsere Mission",
     "content": "Reisen und das Verbinden mit Orten und Menschen sind uns sehr wichtig, es ist der Grundstein, warum TravAl existiert. Wir glauben, dass Reisen den Geist erweitert und die Art und Weise, wie man denkt, verändert. Die Menschen, die man trifft, und die Erfahrungen, die man macht, verleihen einem die verbesserte Fähigkeit, sich in unterschiedliche Situationen und Menschen hineinzuversetzen.",
@@ -33,6 +36,7 @@ const aboutUsData = {
     "text": "Wählen Sie TravAl für unvergessliche Albanien-Urlaube."
   },
   "italian":{
+    "l0" : "Casa",
     "paragraph": "A proposito di TravAl",
     "title": "La nostra Missione",
     "content": "Viaggiare e connettersi con luoghi e persone è molto importante per noi, è il fondamento per cui TravAl esiste. Crediamo che viaggiare ampli la mente e cambi il modo di pensare. Le persone che incontri e le esperienze che vivi ti danno una maggiore capacità di empatia per diverse situazioni e persone.",
@@ -44,6 +48,7 @@ const aboutUsData = {
     "text": "Scegli TravAl per vacanze indimenticabili in Albania."
   },
   "french": {
+    "l0" : "Maison",
     "paragraph": "À propos de TravAl",
     "title": "Notre Mission",
     "content": "Voyager et se connecter avec des lieux et des gens est très important pour nous, c'est la pierre angulaire de l'existence de TravAl. Nous croyons que voyager élargit l'esprit et change la façon de penser. Les personnes que vous rencontrez et les expériences que vous vivez vous donnent une capacité améliorée à éprouver de l'empathie pour différentes situations et personnes.",
@@ -56,6 +61,7 @@ const aboutUsData = {
   },
   
   "espanol": {
+    "l0" : "Hogar",
     "paragraph": "Sobre TravAl",
     "title": "Nuestra Misión",
     "content": "Viajar y conectarse con lugares y personas es muy importante para nosotros, es la piedra angular de por qué existe TravAl. Creemos que viajar amplía la mente y cambia la forma de pensar. Las personas que conoces y las experiencias que tienes te brindan una mayor capacidad para empatizar con diferentes situaciones y personas.",
@@ -72,6 +78,7 @@ const storedFig1 = localStorage.getItem('fig1') || "../Images/title.png";
 const storedFig2 = localStorage.getItem('fig2') || "../Images/title2.png";
 
 function updateaboutUsContent(selectedLanguage, selectedFlag, fig1, fig2){
+  l0.textContent = aboutUsData[selectedLanguage].l0;
   paragraph.textContent = aboutUsData[selectedLanguage].paragraph;
   title.textContent = aboutUsData[selectedLanguage].title;
   content.textContent = aboutUsData[selectedLanguage].content;
@@ -100,7 +107,7 @@ buttons.forEach(button =>{
       langMenu.querySelector('.active').classList.remove('active');
       button.classList.add('active');
 
-      const selectedLanguage = button.getAttribute('language');
+      selectedLanguage = button.getAttribute('language');
       let fig1 = "";
       let fig2 = "";
     console.log(selectedLanguage);

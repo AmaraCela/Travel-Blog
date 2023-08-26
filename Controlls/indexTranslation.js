@@ -30,7 +30,7 @@ const indexData = {
     "card4Text" : "Northern tours",
     "card5More" : "More destinations...",
     "cardCarousselSummer" : "Summer Vacation",
-    "cardCarousselWinter" : "Winter Cacation",
+    "cardCarousselWinter" : "Winter Vacation",
     "btnMore" : "More"
   },
   "german" :{
@@ -110,13 +110,6 @@ const indexData = {
 
 function updateIndexContent(selectedLanguage, selectedFlag){
   al.textContent = indexData[selectedLanguage].al;
-  if(document.querySelector('#sum').classList.contains('winter-mode')){
-    console.log('winter-mode found');
-    sum.textContent = indexData[selectedLanguage].winter;
-  }else{
-    console.log('winter-mode not found');
-    sum.textContent = indexData[selectedLanguage].sum;
-  }
   card1.textContent = indexData[selectedLanguage].card1title;
   card2.textContent = indexData[selectedLanguage].card2title;
   card3.textContent = indexData[selectedLanguage].card3title;
@@ -146,8 +139,9 @@ buttons.forEach(button =>{
     langMenu.querySelector('.active').classList.remove('active');
     button.classList.add('active');
 
-    const selectedLanguage = button.getAttribute('language');
-    console.log(selectedLanguage);
+    selectedLanguage = button.getAttribute('language');
+    // console.log(selectedLanguage);
+    // console.log('stored language at indexTranslation is ',storedLanguage)
     if(selectedLanguage == "german"){
       selectedFlag = "url('https://flagsapi.com/BE/flat/32.png')";
     }else if(selectedLanguage=="italian"){

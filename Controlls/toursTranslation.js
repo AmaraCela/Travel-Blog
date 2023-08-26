@@ -1,3 +1,4 @@
+const l0 = document.querySelector('#l0');
 const filter = document.querySelector('#filter');
 const filterLabel = document.querySelector('#filterLabel');
 const numOfDays = document.querySelector('#numOfDays');
@@ -41,6 +42,7 @@ const browse = document.querySelector('#browse-p');
 
 const toursData = {
   "english" :{
+    "l0" : "Home",
     "filter" : "Filter by :",
     "filterLabel" : "Price",
     "numOfDays" : "Number of days",
@@ -83,6 +85,7 @@ const toursData = {
     "browse" : "Browse the collection of tours that we offer"
   },
   "german": {
+    "l0" : "Heim",
     "filter": "Filtern nach:",
     "filterLabel": "Preis",
     "numOfDays": "Anzahl der Tage",
@@ -125,6 +128,7 @@ const toursData = {
     "browse": "Durchstöbern Sie die Sammlung von Touren, die wir anbieten"
   },
   "italian":{
+    "l0" : "Casa",
     "filter": "Filtra per:",
     "filterLabel": "Prezzo",
     "numOfDays": "Numero di giorni",
@@ -167,6 +171,7 @@ const toursData = {
     "browse": "Sfoglia la collezione di tour che offriamo"
   },
   "french": {
+    "l0" : "Maison",
     "filter": "Filtrer par :",
     "filterLabel": "Prix",
     "numOfDays": "Nombre de jours",
@@ -209,6 +214,7 @@ const toursData = {
     "browse": "Parcourez la collection de tours que nous proposons"
   },
   "espanol": {
+    "l0" : "Hogar",
     "filter": "Filtrar por:",
     "filterLabel": "Precio",
     "numOfDays": "Número de días",
@@ -253,6 +259,7 @@ const toursData = {
 }
 
 function updateToursContent(selectedLanguage, selectedFlag){
+  l0.textContent = toursData[selectedLanguage].l0;
   filter.textContent = toursData[selectedLanguage].filter;
   filterLabel.textContent = toursData[selectedLanguage].filterLabel;
   numOfDays.textContent = toursData[selectedLanguage].numOfDays;
@@ -312,7 +319,7 @@ buttons.forEach(button =>{
     langMenu.querySelector('.active').classList.remove('active');
     button.classList.add('active');
 
-    const selectedLanguage = button.getAttribute('language');
+    selectedLanguage = button.getAttribute('language');
   console.log(selectedLanguage);
   if(selectedLanguage == "german"){
     selectedFlag = "url('https://flagsapi.com/BE/flat/32.png')";

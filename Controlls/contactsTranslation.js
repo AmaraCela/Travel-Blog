@@ -1,3 +1,4 @@
+const l0 = document.querySelector('#l0');
 const h1 = document.querySelector('#h1');
 const span = document.querySelector('#span');
 const text1 = document.querySelector('.text1');
@@ -18,6 +19,7 @@ const message = document.querySelector('#message');
 
 const contactsData = {
   "english" :{
+    "l0" : "Home",
     "h1": "Get in touch",
     "span": "Want to get in touch? We would love to hear from you. Here is how you can reach us...",
     "text1": "Visit us at our office",
@@ -37,6 +39,7 @@ const contactsData = {
     "message" : "Message"
   },
   "german" :{
+    "l0" : "Heim",
     "h1": "Kontakt aufnehmen",
     "span": "Möchten Sie Kontakt aufnehmen? Wir würden gerne von Ihnen hören. Hier erfahren Sie, wie Sie uns erreichen können...",
     "text1": "Besuchen Sie uns im Büro",
@@ -56,6 +59,7 @@ const contactsData = {
     "message": "Nachricht"
   },
   "italian":{
+    "l0" : "Casa",
     "h1": "Contattaci",
     "span": "Vuoi metterti in contatto? Ci piacerebbe sentirti. Ecco come puoi raggiungerci...",
     "text1": "Vieni a trovarci in ufficio",
@@ -75,6 +79,7 @@ const contactsData = {
     "message": "Messaggio"
   },
   "french": {
+    "l0" : "Maison",
     "h1": "Nous contacter",
     "span": "Envie de nous contacter ? Nous aimerions avoir de vos nouvelles. Voici comment vous pouvez nous joindre...",
     "text1": "Rendez-nous visite à notre bureau",
@@ -95,6 +100,7 @@ const contactsData = {
   },
   
   "espanol": {
+    "l0" : "Hogar",
     "h1": "Ponte en contacto",
     "span": "¿Quieres ponerte en contacto? Nos encantaría saber de ti. Así es cómo puedes contactarnos...",
     "text1": "Visítanos en nuestra oficina",
@@ -117,6 +123,7 @@ const contactsData = {
 
 function updateContactsContent(selectedLanguage, selectedFlag){
   
+  l0.textContent = contactsData[selectedLanguage].l0;
   h1.textContent = contactsData[selectedLanguage].h1;
   span.textContent = contactsData[selectedLanguage].span;
   text1.textContent = contactsData[selectedLanguage].text1;
@@ -149,7 +156,7 @@ buttons.forEach(button =>{
     langMenu.querySelector('.active').classList.remove('active');
     button.classList.add('active');
 
-    const selectedLanguage = button.getAttribute('language');
+    selectedLanguage = button.getAttribute('language');
   console.log(selectedLanguage);
   if(selectedLanguage == "german"){
     selectedFlag = "url('https://flagsapi.com/BE/flat/32.png')";

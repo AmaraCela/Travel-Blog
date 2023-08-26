@@ -1,3 +1,4 @@
+const l0 = document.querySelector('#l0');
 const StaffTitleP = document.querySelector('#StaffTitleP');
 const meetAndGreet = document.querySelector('#meetAndGreet');
 const travelConsultant = document.querySelectorAll('.tc');
@@ -10,6 +11,7 @@ const info = document.querySelectorAll('.info');
 
 const ourStaffData = {
   "english" :{
+    "l0" : "Home",
     "StaffTitleP": "Our Staff",
     "meetAndGreet": "Meet The Team",
     "travelConsultant": "Travel Consultant",
@@ -21,6 +23,7 @@ const ourStaffData = {
     
   },
   "german" :{
+    "l0" : "Heim",
     "StaffTitleP": "Unser Personal",
     "meetAndGreet": "Team Treffen",
     "travelConsultant": "Reiseberater",
@@ -31,6 +34,7 @@ const ourStaffData = {
     "info": "Lorem Ipsum ist einfach nur Blindtext der Druck- und Satzindustrie.",
   },
   "italian":{
+    "l0" : "Casa",
     "StaffTitleP": "Il Nostro Staff",
     "meetAndGreet": "Incontra il Team",
     "travelConsultant": "Consulente di Viaggio",
@@ -41,6 +45,7 @@ const ourStaffData = {
     "info": "Lorem Ipsum è un testo segnaposto utilizzato nel settore della stampa e della tipografia."
   },
   "french": {
+    "l0" : "Maison",
     "StaffTitleP": "Notre Équipe",
     "meetAndGreet": "Rencontrez l'Équipe",
     "travelConsultant": "Conseiller en Voyage",
@@ -52,6 +57,7 @@ const ourStaffData = {
   },
   
   "espanol": {
+    "l0" : "Hogar",
     "StaffTitleP": "Nuestro Equipo",
     "meetAndGreet": "Conoce al Equipo",
     "travelConsultant": "Consultor de Viajes",
@@ -64,6 +70,7 @@ const ourStaffData = {
 }
 
 function updateStaffContent(selectedLanguage, selectedFlag){
+  l0.textContent = ourStaffData[selectedLanguage].l0;
   StaffTitleP.textContent = ourStaffData[selectedLanguage].StaffTitleP;
   meetAndGreet.textContent = ourStaffData[selectedLanguage].meetAndGreet;
   travelConsultant.forEach(tv=>{
@@ -91,7 +98,7 @@ buttons.forEach(button =>{
     langMenu.querySelector('.active').classList.remove('active');
     button.classList.add('active');
 
-    const selectedLanguage = button.getAttribute('language');
+    selectedLanguage = button.getAttribute('language');
   console.log(selectedLanguage);
   if(selectedLanguage == "german"){
    selectedFlag = "url('https://flagsapi.com/BE/flat/32.png')";

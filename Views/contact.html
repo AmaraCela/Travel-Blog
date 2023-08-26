@@ -6,8 +6,6 @@
     <link rel="icon" href="../Images/Logo/FavLogo.png" />
     <title>Contact Us</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="../css/ContactPageStyles/contact.css" />
-    <link rel="stylesheet" href="../css/wintermode.css" />
     <!-- icons links -->
     <link
       rel="stylesheet"
@@ -30,15 +28,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/Styling.css" />
-    <link rel="stylesheet" href="../css/temp.css" />
   </head>
   <body>
     <div class="container1">
       <header class="header">
         <nav class="navbar1">
           <div class="brand-titlee">
-            <a href="#"
-              ><img src="../Images/location.png" id="location" alt="location"
+            <a href="./mapPage.html" id="mapBtn"><img src="../Images/location.png" id="location" alt="location"
             /></a>
           </div>
           <div class="elements">
@@ -121,16 +117,7 @@
           <div id="ret" class="col-lg-5 col-md-9 col-sm-12">
             <div class="contact-card">
               <div class="content-container">
-                <iframe
-                  class="dark-map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.3229824720383!2d19.812061276096696!3d41.32358959994988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350313540c99c4b%3A0x7398d6f11582ba30!2sDominusoft!5e0!3m2!1ssq!2s!4v1691598585649!5m2!1ssq!2s"
-                  width="600"
-                  height="450"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+                <iframe class="dark-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.3229824720383!2d19.812061276096696!3d41.32358959994988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350313540c99c4b%3A0x7398d6f11582ba30!2sDominusoft!5e0!3m2!1ssq!2s!4v1691598585649!5m2!1ssq!2s" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="contact-method-text-container fs-3">
                   <span class="contact-method-text text1"
                     >Visit us at our office</span
@@ -139,9 +126,7 @@
                     <span class="material-symbols-outlined fs-2 red-icon">
                       location_on
                     </span>
-                    <span class="contact-method-text text2"
-                      >Rr: “Reshit Çollaku”, Tiranë</span
-                    >
+                    <span class="contact-method-text text2">Rr: “Reshit Çollaku”, Tiranë</span>
                   </div>
                 </div>
               </div>
@@ -150,10 +135,7 @@
           <div id="temp" class="col-lg-5 col-md-9 col-sm-12">
             <div class="contact-card">
               <div class="content-container">
-                <img
-                  src="../Images/ContactPageImg/Email or phone.jpeg"
-                  alt=""
-                />
+                <img src="../Images/ContactPageImg/Email or phone.jpeg" alt=""/>
                 <div class="contact-method-text-container fs-3">
                   <div id="phone-contact-text">
                     <span class="material-symbols-outlined fs-2 call">
@@ -165,9 +147,7 @@
                     <span class="material-symbols-outlined fs-2 mail">
                       mail
                     </span>
-                    <span class="contact-method-text text4"
-                      >info@example.com</span
-                    >
+                    <span class="contact-method-text text4">info@example.com</span>
                   </div>
                 </div>
               </div>
@@ -187,77 +167,40 @@
       </div>
     </section>
     <section id="contact-form-section">
-      <div
-        class="container-fluid form-container justify-content-center summer-mode"
-      >
-        <form
-          action=""
-          method=""
-          class="contact-form"
-          id="contact-form"
-          novalidate
-        >
-          <div class="row">
-            <div class="offset-md-1 col-md-5 col-sm-12 form-input-field">
-              <input
-                type="text"
-                class="form-control super-sexy"
-                id="firstName"
-                placeholder="First name"
-                required
-              />
+      <div class="container-fluid form-container justify-content-center summer-mode">
+        <form action="" method="" class="contact-form" id="contact-form" novalidate>
+          <div class="row justify-content-center">
+            <div class="col-md-5 col-sm-12 form-input-field contact-form-input-field">
+              <input type="text" class="form-control super-sexy" id="firstName" placeholder="First name" required/>
             </div>
-            <div class="col-md-5 col-sm-12 form-input-field">
-              <input
-                type="text"
-                class="form-control super-sexy"
-                id="lastName"
-                placeholder="Last name"
-                required
-              />
+            <div class="col-md-5 col-sm-12 form-input-field contact-form-input-field">
+              <input type="text" class="form-control super-sexy" id="lastName" placeholder="Last name" required/>
             </div>
           </div>
-          <div class="row">
-            <div class="offset-md-1 col-md-5 col-sm-12 form-input-field">
-              <input
-                type="email"
-                class="form-control super-sexy"
-                id="email"
-                placeholder="Email"
-                required
-              />
+          <div class="row justify-content-center">
+            <div class=" col-md-5 col-sm-12 form-input-field contact-form-input-field">
+              <input type="email" class="form-control super-sexy" id="email" placeholder="Email" required/>
             </div>
-            <div class="col-md-5 col-sm-12 form-input-field">
-              <input
-                type="text"
-                class="form-control super-sexy"
-                id="phoneNum"
-                placeholder="Phone number"
-                required
-              />
+            <div class="col-md-5 col-sm-12 form-input-field contact-form-input-field">
+              <input type="text"class="form-control super-sexy" id="phoneNum" placeholder="Phone number" required/>
             </div>
           </div>
-          <div class="row">
-            <div class="offset-md-1 col-md-10 col-sm-12 form-input-field">
-              <textarea
-                class="form-control super-sexy"
-                id="message"
-                placeholder="Message"
-                rows="5 "
-              ></textarea>
+          <div class="row justify-content-center">
+            <div class=" col-md-10 col-sm-12 form-input-field contact-form-input-field">
+              <textarea class="form-control super-sexy" id="message" placeholder="Message" rows="5 "></textarea>
             </div>
           </div>
           <div class="row center-button justify-content-center">
             <div class="col-md-4 col-sm-8">
-              <button id="submit-button" class="btn-form enabled">
-                Submit
-              </button>
+              <button id="submit-button" class="btn-form enabled">Submit</button>
             </div>
           </div>
         </form>
       </div>
     </section>
+    <div id="threeInOne-popup-container"></div>
     <footer>
+      <!-- ----------------------------------------FOOTER---------------------------- -->
       <div class="container2 summer-mode" id="c2">
         <div class="shore-part">
           <div class="sub summer-mode" id="sub">
@@ -268,36 +211,24 @@
         </div>
         <div class="shore2">
           <div class="socials">
-            <ul>
-              <li>
-                <i class="footer__icons fa-brands fa-square-facebook"></i>
-              </li>
-              <li>
-                <i
-                  class="footer__icons fa-brands fa-square-instagram"
-                  style="color: #7a4b81"
-                ></i>
-              </li>
-              <li><i class="footer__icons fa-solid fa-envelope"></i></li>
-              <li>
-                <i
-                  class="footer__icons fa-brands fa-linkedin"
-                  style="color: #1a3d7a"
-                ></i>
-              </li>
-            </ul>
-          </div>
-          <div class="others">
-            <a href="" id="f1">FAQs</a>
-            <a href="" id="f2">Terms of Service</a>
-            <a href="" id="f3">Privacy Policy</a>
-          </div>
+          <ul>
+            <li><i class="footer__icons fa-brands fa-square-facebook"></i></li>
+            <li><i class="footer__icons fa-brands fa-square-instagram" style="color: #7a4b81;"></i></li>
+            <li><i class="footer__icons fa-solid fa-envelope"></i></li>
+            <li><i class="footer__icons fa-brands fa-linkedin" style="color: #1a3d7a;"></i></li>
+          </ul>
         </div>
-        <hr style="border: 1px solid rgb(255, 255, 255)" />
+        <div class="others">
+          <span id="f1" class="popup-button">FAQs</span>
+          <span id="f2" class="popup-button">Terms of Service</span>
+          <span id="f3" class="popup-button">Privacy Policy</span>
+        </div>
+        </div>
+        <hr style="border:1px solid rgb(255, 255, 255);">
         <p class="cop">@copyright2023</p>
       </div>
+  
     </footer>
-
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -311,6 +242,7 @@
     <script src="../Controlls/contact-form.js"></script>
     <script src="../Controlls/temp.js"></script>
     <script src="../Controlls/header-Footer-Translation.js"></script>
+    <script src="../Controlls/load_threeInOne.js"></script>
     <script src="../Controlls/contactsTranslation.js"></script>
   </body>
 </html>

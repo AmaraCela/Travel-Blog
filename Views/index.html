@@ -26,7 +26,7 @@
   <div class="container1">
     <header class="header">
     <nav class="navbar1">
-      <div class="brand-titlee"> <a href="#"><img src="../Images/location.png" id="location" alt="location"></a></div>
+      <div class="brand-titlee"> <a href="./mapPage.html" id="mapBtn"><img src="../Images/location.png" id="location" alt="location"></a></div>
       <div class="elements">
         <ul>
     <li><a href="./tours.html" class="l" id="l1">Tours</a></li>
@@ -49,11 +49,11 @@
       <div class="selected-langg">
       </div>
       <ul>
-        <li><a id="en" class="lang-btn active" href="" language="english" >English</a></li>
-        <li><a id="de" class="lang-btn" href="" language="german">German</a></li>
-        <li><a id="it" class="lang-btn" href="" language="italian">Italian</a></li>
-        <li><a id="fr" class="lang-btn" href="" language="french">French</a></li>
-        <li><a id="es" class="lang-btn" href="" language="espanol">Espanol</a></li>
+        <li><a id="en" class="lang-btn active" href="" language="english" >&nbsp;English</a></li>
+        <li><a id="de" class="lang-btn" href="" language="german">&nbsp;German</a></li>
+        <li><a id="it" class="lang-btn" href="" language="italian">&nbsp;Italian</a></li>
+        <li><a id="fr" class="lang-btn" href="" language="french">&nbsp;French</a></li>
+        <li><a id="es" class="lang-btn" href="" language="espanol">&nbsp;Espanol</a></li>
       </ul>
     </div>
     <a href="" class="toggle-buttonn">
@@ -92,7 +92,6 @@
               <p class="card-p">
               <b id="card1" >Saranda Tours</b><br>
               <img src="../Images/calendar.png" alt="" id="imgT">  5-10 August <br>
-              <!-- <img src="../Images/calendar.png" alt="">  12-15 August <br> -->
               <p class="hidden">
               <img src="../Images/price.png" alt=""> 100$
               </p>
@@ -153,7 +152,7 @@
          <div class="cards">
           <img src="../Images/val2-e1644074666479.jpg" alt="" height="100%">
           <p class="visit" id="card5">Visit <br> beautiful <br> Albania</p>
-          <div id="more-div">
+          <div id="more-div" class="summer-mode">
               <a href="../Views/tours.html" id="more"> More destinations... </a>
           </div>
          </div>
@@ -187,7 +186,7 @@
                           </div>
                           <div class="thumb-content">
                             <h4>Himare</h4>
-                            <a href="#" class="more-btn">More <i class="fa fa-angle-right"></i></a>
+                            <!-- <a href="#" class="more-btn">More <i class="fa fa-angle-right"></i></a> -->
                           </div>						
                         </div>
                       </div>
@@ -198,7 +197,7 @@
                           </div>
                           <div class="thumb-content">
                             <h4>Lumi Shales</h4>
-                            <a href="#" class="more-btn">More <i class="fa fa-angle-right"></i></a>
+                            <!-- <a href="#" class="more-btn">More <i class="fa fa-angle-right"></i></a> -->
                           </div>						
                         </div>
                       </div>				
@@ -209,7 +208,7 @@
                           </div>
                           <div class="thumb-content">
                             <h4>Sarande</h4>
-                            <a href="#" class="more-btn">More <i class="fa fa-angle-right"></i></a>
+                            <!-- <a href="#" class="more-btn">More <i class="fa fa-angle-right"></i></a> -->
                           </div>						
                         </div>					
                       </div>
@@ -225,7 +224,7 @@
                           </div>
                           <div class="thumb-content">
                             <h4>Dardhe</h4>
-                            <a href="#" class=" more-btn">More <i class="fa fa-angle-right"></i></a>
+                            <!-- <a href="#" class=" more-btn">More <i class="fa fa-angle-right"></i></a> -->
                           </div>						
                         </div>
                       </div>
@@ -236,7 +235,7 @@
                           </div>
                           <div class="thumb-content">
                             <h4>Lugina Valbones</h4>
-                            <a href="#" class="more-btn">More <i class="fa fa-angle-right"></i></a>
+                            <!-- <a href="#" class="more-btn">More <i class="fa fa-angle-right"></i></a> -->
                           </div>						
                         </div>
                       </div>
@@ -247,7 +246,7 @@
                           </div>
                           <div class="thumb-content">
                             <h4>Theth</h4>
-                            <a href="#" class="more-btn">More <i class="fa fa-angle-right"></i></a>
+                            <!-- <a href="#" class="more-btn">More <i class="fa fa-angle-right"></i></a> -->
                           </div>						
                         </div>					
                       </div>
@@ -268,7 +267,7 @@
       
   </section>
 
-
+  <div id="threeInOne-popup-container"></div>
 <!-- ----------------------------------------FOOTER---------------------------- -->
 <div class="container2 summer-mode" id="c2">
   <div class="shore-part">
@@ -288,9 +287,9 @@
     </ul>
   </div>
   <div class="others">
-    <a href="" id="f1">FAQs</a>
-    <a href="" id="f2">Terms of Service</a>
-    <a href="" id="f3">Privacy Policy</a>
+    <span id="f1" class="popup-button">FAQs</span>
+    <span id="f2" class="popup-button">Terms of Service</span>
+    <span id="f3" class="popup-button">Privacy Policy</span>
   </div>
   </div>
   <hr style="border:1px solid rgb(255, 255, 255);">
@@ -299,8 +298,11 @@
 
 <!-- <script src="../Controlls/script.js"></script> -->
 <script src="../Controlls/caroussel.js"></script>
-<script src="../Controlls/temp.js"></script>
+
 <script src="../Controlls/header-Footer-Translation.js"></script>
 <script src="../Controlls/indexTranslation.js"></script>
+<script src="../Controlls/temp.js"></script>
+<script src="../Controlls/load_threeInOne.js"></script>
+<!-- <script src="../Controlls/load-footer.js"></script> -->
 </body>
 </html>

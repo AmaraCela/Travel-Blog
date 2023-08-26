@@ -60,11 +60,11 @@ var simplemaps_countrymap_mapdata={
     //Advanced settings
     div: "map",
     auto_load: "yes",
-    url_new_tab: "no",
+    url_new_tab: "yes",
     images_directory: "default",
     fade_time: 0.1,
-    link_text: "View Website",
-    popups: "detect",
+    link_text: "Book Now",
+    popups: "on_click",
     state_image_url: "",
     state_image_position: "",
     location_image_url: ""
@@ -143,8 +143,7 @@ var simplemaps_countrymap_mapdata={
       lng: 19.453,
       name: "Durres",
       description: "<img src=\"https://static.wixstatic.com/media/7fda7d_c0b59ee096f74eabbd20cb75512823a0~mv2.jpg/v1/fill/w_612,h_370,al_c,q_80,enc_auto/7fda7d_c0b59ee096f74eabbd20cb75512823a0~mv2.jpg\" alt=\"\" style=\"height: 200px; width: 250px;\">",
-      url: "https://www.google.com/maps/search/Restorante/@41.3315071,19.4251577,13z/data=!3m1!4b1?entry=ttu"
-    },
+      url: "./individualTour.html"    },
     "5": {
       lat: 41.322,
       lng: 19.825,
@@ -208,7 +207,7 @@ var simplemaps_countrymap_mapdata={
       lat: 40.477,
       lng: 19.488,
       name: "Vlore",
-      description: "<img src=\"https://eis.epoka.edu.al/uploads/profilepic/img_15025_1608027118.jpg\" alt=\"\" style=\"height: 200px; width: 250px;\"><br><span>Gjith ai burre e shtypi<br> makina e beri fertele</span>",
+      description: "<img src=\"https://storage.googleapis.com/albania-travel-guide/2022/07/Vlore-Albania-Travel-Guide-44-960x540.jpg\" alt=\"\" style=\"height: 200px; width: 250px;\">",
       url: "./individualTour.html"
     },
     "14": {

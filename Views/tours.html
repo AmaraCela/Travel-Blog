@@ -19,10 +19,11 @@
         <div class="container1">
             <header class="header">
             <nav class="navbar1">
-              <div class="brand-titlee"> <a href="#"><img src="../Images/location.png" id="location" alt="location"></a></div>
+              <div class="brand-titlee"> <a href="./mapPage.html" id="mapBtn"><img src="../Images/location.png" id="location" alt="location"></a></div>
               <div class="elements">
                 <ul>
-            <li><a href="#" class="l" id="l1">Tours</a></li>
+            <li><a href="./index.html" class="l" id="l0">Home</a></li>
+            <li><a href="./tours.html" class="l" id="l1">Tours</a></li>
             <li><a href="./aboutUs1.html" class="l" id="l2">About Us</a></li>
             <li><a href="./contact.html" class="l" id="l3">Contacts</a></li>
           </ul>
@@ -42,11 +43,11 @@
               <div class="selected-langg">
               </div>
               <ul>
-                <li><a id="en" class="lang-btn active" href="" language="english" >English</a></li>
-                <li><a id="de" class="lang-btn" href="" language="german">German</a></li>
-                <li><a id="it" class="lang-btn" href="" language="italian">Italian</a></li>
-                <li><a id="fr" class="lang-btn" href="" language="french">French</a></li>
-                <li><a id="es" class="lang-btn" href="" language="espanol">Espanol</a></li>
+                <li><a id="en" class="lang-btn active" href="" language="english">&nbsp;&nbsp; English</a></li>
+        <li><a id="de" class="lang-btn" href="" language="german">&nbsp;&nbsp; German</a></li>
+        <li><a id="it" class="lang-btn" href="" language="italian">&nbsp;&nbsp; Italian</a></li>
+        <li><a id="fr" class="lang-btn" href="" language="french">&nbsp;&nbsp; French</a></li>
+        <li><a id="es" class="lang-btn" href="" language="espanol">&nbsp;&nbsp; Espanol</a></li>
               </ul>
             </div>
             <a href="" class="toggle-buttonn">
@@ -127,7 +128,7 @@
             <div class="back-card" title="Tap for more">
                 <p class="tag five" id="5">5 day tours</p>
                 <p class="back-p" id="dhermiTour"><b>Dhermi Tour </b></p><br>
-                    <hr>
+                    <hr class="hr-tours">
                     13-18 August <br>
                     20-25 August 
                 <div class="price-div">
@@ -150,7 +151,7 @@
             <div class="back-card">
                 <p class="tag five" id="5">5 day tours</p>
                 <p class="back-p" id="ksamilTour"><b>Ksamil Tour </b></p><br>
-                    <hr>
+                    <hr class="hr-tours">
                     13-18 August <br>
                     20-25 August
                 
@@ -174,7 +175,7 @@
             <div class="back-card">
                 <p class="tag three" id="3">3 day tours</p>
                 <p class="back-p" id="borshTour"><b>Borsh Tour</b></p> <br>
-                    <hr>
+                    <hr class="hr-tours">
                     13-16 August <br>
                     17-20 August
                 
@@ -198,7 +199,7 @@
             <div class="back-card">
                 <p class="tag two" id="2">2 day tours</p>
                 <p class="back-p" id="gjipeTour"><b>Gjipe Tour</b></p><br>
-                    <hr>
+                    <hr class="hr-tours">
                     13-15 August <br>
                     16-18 August <br>
                 
@@ -222,7 +223,7 @@
             <div class="back-card">
                 <p class="tag one" id="1">1 day tours</p>
                 <p class="back-p" id="ranaTour"><b>Rana e Hedhur Tour </b></p><br>
-                    <hr>
+                    <hr class="hr-tours">
                     13, 14, 15, 16, 17, 18, 19, 20 August
                 
                 <div class="price-div">
@@ -245,7 +246,7 @@
             <div class="back-card">
                 <p class="tag five" id="5">5 day tours</p>
                 <p class="back-p" id="jaleTour"><b>Jale Tour </b></p><br>
-                    <hr>
+                    <hr class="hr-tours">
                     13-18 August <br>
                     20-25 August
                 
@@ -269,7 +270,7 @@
             <div class="back-card" >
                 <p class="tag four" id="4">4 day tours</p>
                 <p class="back-p" id="livadhiTour"><b>Livadhi Tour </b></p><br>
-                    <hr>
+                    <hr class="hr-tours">
                     13-17 August <br>
                     20-24 August
                 
@@ -293,7 +294,7 @@
             <div class="back-card">
                 <p class="tag one" id="1">1 day tours</p>
                 <p class="back-p" id="zvernecTour"><b>Zvernec Tour</b> </p> <br>
-                    <hr>
+                    <hr class="hr-tours">
                     13, 14, 15, 16, 17, 18, 19, 20 August
                
                 <div class="price-div">
@@ -332,6 +333,7 @@
     </div>
 
     <!-------------------------------------footer------------------------------>
+    <div id="threeInOne-popup-container"></div>
     <div class="container2 summer-mode" id="c2">
       <div class="shore-part">
         <div class="sub summer-mode" id="sub">
@@ -350,18 +352,21 @@
         </ul>
       </div>
       <div class="others">
-        <a href="" id="f1">FAQs</a>
-        <a href="" id="f2">Terms of Service</a>
-        <a href="" id="f3">Privacy Policy</a>
+        <span id="f1" class="popup-button">FAQs</span>
+        <span id="f2" class="popup-button">Terms of Service</span>
+        <span id="f3" class="popup-button">Privacy Policy</span>
       </div>
       </div>
       <hr style="border:1px solid rgb(255, 255, 255);">
       <p class="cop">@copyright2023</p>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-<script src="../Controlls/temp.js"></script>
+
 <script src="../Controlls/filter.js"></script>
 <script src="../Controlls/header-Footer-Translation.js"></script>
 <script src="../Controlls/toursTranslation.js"></script>
+<script src="../Controlls/temp.js"></script>
+<script src="../Controlls/load_threeInOne.js"></script>
 </body>
 </html>

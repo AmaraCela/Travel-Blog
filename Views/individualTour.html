@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ksamil Tour</title>
     <link rel="icon" href="../Images/Logo/FavLogo.png">
-    <!-- <link rel="stylesheet" href="../css/individualTour.css"> -->
     <link rel="stylesheet" href="../css/Styling.css">
     <link rel="stylesheet" href="../css/wintermode.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,16 +15,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Lobster&display=swap" rel="stylesheet"> 
-    <!-- <link rel="stylesheet" href="../css/footer.css"> -->
     
 <body class="individual-body">
   <img id="main-img-individual" src="../Images/ksamil.jpg" alt="main image" height="600px">
   <div class="container1">
     <header class="header">
     <nav class="navbar1">
-      <div class="brand-titlee"> <a href="#"><img src="../Images/location.png" id="location" alt="location"></a></div>
+      <div class="brand-titlee"> <a href="./mapPage.html" id="mapBtn"><img src="../Images/location.png" id="location" alt="location"></a></div>
       <div class="elements">
         <ul>
+    <li><a href="./index.html" class="l" id="l0">Home</a></li>
     <li><a href="./tours.html" class="l" id="l1">Tours</a></li>
     <li><a href="./aboutUs1.html" class="l" id="l2">About Us</a></li>
     <li><a href="./contact.html" class="l" id="l3">Contacts</a></li>
@@ -33,24 +32,24 @@
   </div>
   </nav>
   <nav class="navbar2">
-    <!-- <div class="btnn">
+    <div class="btnn">
       <div class="btnn__indicator">
         <div class="btnn__icon-container">
           <i class="btnn__icon fa-solid"></i>
         </div>
       </div>
-    </div> -->
+    </div>
     <button class="booking">Book a Tour</button>
   
     <div class="lang-menuu">
       <div class="selected-langg">
       </div>
       <ul>
-        <li><a id="en" class="lang-btn active" href="" language="english" >English</a></li>
-        <li><a id="de" class="lang-btn" href="" language="german">German</a></li>
-        <li><a id="it" class="lang-btn" href="" language="italian">Italian</a></li>
-        <li><a id="fr" class="lang-btn" href="" language="french">French</a></li>
-        <li><a id="es" class="lang-btn" href="" language="espanol">Espanol</a></li>
+        <li><a id="en" class="lang-btn active" href="" language="english">&nbsp;&nbsp; English</a></li>
+        <li><a id="de" class="lang-btn" href="" language="german">&nbsp;&nbsp; German</a></li>
+        <li><a id="it" class="lang-btn" href="" language="italian">&nbsp;&nbsp; Italian</a></li>
+        <li><a id="fr" class="lang-btn" href="" language="french">&nbsp;&nbsp; French</a></li>
+        <li><a id="es" class="lang-btn" href="" language="espanol">&nbsp;&nbsp; Espanol</a></li>
       </ul>
     </div>
     <a href="" class="toggle-buttonn">
@@ -116,6 +115,7 @@
     </aside>
     </div>
 
+    <div id="threeInOne-popup-container"></div>
     <div class="container2 summer-mode" id="c2">
       <div class="shore-part">
         <div class="sub summer-mode" id="sub">
@@ -134,16 +134,18 @@
         </ul>
       </div>
       <div class="others">
-        <a href="" id="f1">FAQs</a>
-        <a href="" id="f2">Terms of Service</a>
-        <a href="" id="f3">Privacy Policy</a>
+        <span id="f1" class="popup-button">FAQs</span>
+        <span id="f2" class="popup-button">Terms of Service</span>
+        <span id="f3" class="popup-button">Privacy Policy</span>
       </div>
       </div>
       <hr style="border:1px solid rgb(255, 255, 255);">
       <p class="cop">@copyright2023</p>
     </div>
-    <!-- <script  src="../Controlls/script.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="../Controlls/header-Footer-Translation.js"></script>
     <script src="../Controlls/individualTourTranslation.js"></script>
+    <script src="../Controlls/load_threeInOne.js"></script>
+    <script src="../Controlls/temp.js"></script>
 </body>
 </html>
